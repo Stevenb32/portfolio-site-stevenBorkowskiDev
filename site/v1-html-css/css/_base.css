@@ -1,0 +1,97 @@
+/* Page Wide Element Defaults */
+
+/* Responsive Font Sizing & Default Scrolling Behavior */
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+  scroll-behavior: smooth;  
+  scroll-padding-top: var(--scroll-offset-desktop);
+  scrollbar-gutter: stable;  
+}
+
+/* Accessibility Outline */
+:where(a, button, input, textarea, select):focus-visible {
+  outline: 2px solid var(--color-primary);
+  outline-offset: 3px;
+}
+
+/* Heading Style */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: var(--fw-bold);
+  letter-spacing: 0.5px;
+  line-height: var(--line-height-tight);
+}
+
+/* Heading Sizes */
+h1 {
+  font-size: var(--font-size-h1);
+}
+h2 {
+  font-size: var(--font-size-h2);
+}
+h3 {
+  font-size: var(--font-size-h3);
+}
+h4 {
+  font-size: var(--font-size-h4);
+}
+h5 {
+  font-size: var(--font-size-h5);
+}
+h6 {
+  font-size: var(--font-size-h6);
+}
+
+/* Base Typography */
+body {
+  font-family: "Inter", system-ui, sans-serif;
+  font-size: var(--font-size-body);
+  line-height: 1.6;
+  color: var(--color-text);
+
+  background-color: var(--color-bg);
+}
+
+/* Responsive Images */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* Inputs Inherit Fonts */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Default Link Style */
+a {
+  color: var(--color-link);
+  text-decoration: none;
+}
+
+/* Remove Button Styling */
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* Media Queries ------------------------------------------------ */
+
+/* Reduce Motion If User Prefers */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

@@ -1,0 +1,115 @@
+/* Page-wide Structural Patterns - deine placement, spacing, structure */
+/* Page Regions - header, main, footer, sections, containers */
+/* Page-wide Layouts - grids, sidebars, stacks, spacing patterns, flex/column rules */
+/* Skeleton - where are things and how they are arranged */
+
+/* Page ---------------------------------------------------------------- */
+#home {
+  scroll-margin-top: 0;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+
+  min-height: 100vh;
+}
+
+.page__header {
+  position: sticky;
+  top: 0;
+  z-index: var(--z-nav);
+
+  padding-block: var(--space-16);
+
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+
+  border-bottom: 1px solid var(--color-primary);
+  box-shadow: 0 1px 12px var(--color-primary-strong);
+}
+
+.page__main {
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: auto;
+}
+
+.page__footer {
+  flex-shrink: 0;
+  padding-block: var(--space-16);
+  background-color: var(--color-gray-9);
+}
+
+/* Sections Layout - Full Width ------------------------------------------------ */
+.section {
+  padding-block: var(--space-80);
+}
+
+.section-hero {
+  display: flex;
+  align-items: center;
+  min-height: 60vh;
+}
+
+.section-about,
+.section-projects {
+  background-color: var(--color-gray-9);
+}
+
+/* Containers - Centering & Limit Width ------------------------- */
+.container {
+  width: 100%;
+  max-width: var(--container-max-width);
+  padding-inline: var(--space-16);
+  margin-inline: auto;
+}
+
+/* Layout Media Queries ------------------------------------------------ */
+
+/* tablet + down (768px) */
+@media (max-width: 48em) {
+  html {
+    scroll-padding-top: var(--scroll-offset-tablet);
+  }
+
+  .page__header {
+    padding-block: var(--space-8);
+  }
+
+  .section {
+    padding-block: var(--space-64);
+  }
+
+  .container {
+    padding-inline: var(--space-12);
+  }
+}
+
+/* phone + down (480px) */
+@media (max-width: 30em) {
+  html {
+    scroll-padding-top: var(--scroll-offset-phone);
+  }
+
+  .section {
+    padding-block: var(--space-48);
+  }
+
+  .container {
+    padding-inline: var(--space-8);
+  }
+}
+
+/* small phone + down (424px) */
+@media (max-width: 26.5em) {
+  html {
+    scroll-padding-top: var(--scroll-offset-phone-s);
+  }
+}
+
+/* ultra-small phones (320px) */
+/* @media (max-width: 20em) {
+  
+} */

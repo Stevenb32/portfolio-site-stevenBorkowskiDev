@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- SEO Description Of Page -->
+    <meta name="description" content="Cloudflare DNS and security project securing a self-hosted website with authoritative DNS, HTTPS, SSL/TLS, and proxying to protect a home-hosted origin server." />
+    <link rel="canonical" href="https://stevenborkowski.dev/projects/cloudflare-dns-security/" />
+
+    <!-- Favicons For Different Platforms -->
+    <link rel="icon" href="../../assets/icons/favicon.ico" />
+    <link rel="apple-touch-icon" href="../../assets/icons/apple-touch-icon.png" />
+    <link rel="manifest" href="../../assets/icons/site.webmanifest" />
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Style Sheet(s) -->
+    <link rel="stylesheet" href="../../css/styles.css" />
+
+    <title>Cloudflare DNS & Security Setup | Steven Borkowski</title>
+  </head>
+
+  <!-- BODY ------------------------------------------------------------------------->
+  <body class="page">
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <!-- HEADER --------------------------------------------------------------------->
+    <header class="page__header">
+      <div class="container">
+        <nav class="nav" aria-label="Primary">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__link" href="/#home">Home</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="/#about">About</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="/#experience">Experience</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="/#projects">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a class="nav__link" href="/#contact">Contact</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- MAIN ----------------------------------------------------------------------->
+    <main id="main" class="page__main">
+      <!-- PROJECT --------------------------------------------------------------------->
+      <section class="section section-project">
+        <div class="container">
+          <div class="project">
+            <p class="projects__meta">Infrastructure · Security</p>
+            <h1 class="project__title">Cloudflare DNS & Security Setup</h1>
+            <p class="project__summary">
+              Configured Cloudflare as the public edge for a self-hosted portfolio site, managing DNS, HTTPS, and traffic proxying to
+              securely expose services running on a home server.
+            </p>
+
+            <div class="project__grid">
+              <section class="project__card card" aria-labelledby="project-overview">
+                <h2 id="project-overview" class="project__heading">Overview</h2>
+                <p class="project__text">
+                  This project focuses on establishing a secure and reliable public entry point for a self-hosted website using Cloudflare
+                  as the DNS provider and edge security layer. The goal was to safely expose a home-hosted service to the internet while
+                  reducing direct attack surface on the origin server.
+                </p>
+                <p class="project__text">
+                  The setup includes domain configuration, DNS record management, HTTPS enforcement, and Cloudflare proxying to route
+                  traffic through Cloudflare’s network before reaching the origin. This provides foundational experience with real-world web
+                  infrastructure patterns used to protect production systems.
+                </p>
+              </section>
+
+              <section class="project__card card" aria-labelledby="project-stack">
+                <h2 id="project-stack" class="project__heading">Tech Stack</h2>
+                <ul class="project__tech">
+                  <li class="chip chip--tech">DNS</li>
+                  <li class="chip chip--tech">HTTPS</li>
+                  <li class="chip chip--tech">SSL/TLS</li>
+                  <li class="chip chip--tech">Origin Server (Self-Hosted)</li>
+                </ul>
+              </section>
+
+              <section class="project__card card" aria-labelledby="project-highlights">
+                <h2 id="project-highlights" class="project__heading">Highlights</h2>
+                <ul class="project__bullets">
+                  <li>Configured Cloudflare as authoritative DNS for a custom domain.</li>
+                  <li>Managed A and CNAME records to route traffic to a self-hosted origin server.</li>
+                  <li>Enabled Cloudflare proxying to mask the origin IP and reduce exposure.</li>
+                  <li>Enforced HTTPS using Cloudflare SSL/TLS with a secure edge-to-origin configuration.</li>
+                  <li>Used Cloudflare as a protective layer in front of a Dockerized Nginx web server.</li>
+                  <li>Gained hands-on experience with real DNS propagation, caching, and certificate behavior.</li>
+                </ul>
+              </section>
+
+              <section class="project__card card" aria-labelledby="project-next">
+                <h2 id="project-next" class="project__heading">Next Steps</h2>
+                <ul class="project__bullets">
+                  <li>Tighten origin security by restricting inbound traffic to Cloudflare IP ranges only.</li>
+                  <li>Add Cloudflare security rules and rate limiting for basic attack mitigation.</li>
+                  <li>Explore Cloudflare analytics to better understand traffic patterns and edge behavior.</li>
+                  <li>Document DNS and SSL configuration decisions for repeatable future setups.</li>
+                </ul>
+              </section>
+
+              <div class="project__links">
+                <a class="project__back" href="/#projects">← Back to projects</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -------------------------------------------------------------------->
+    <footer class="page__footer footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__brand">
+            <p class="footer__name">Steven Borkowski</p>
+            <p class="footer__tagline">QA Team Lead · Building Skills in Automation & CI/CD</p>
+          </div>
+
+          <ul class="footer__links">
+            <li><a href="/#home" class="footer__link">Home</a></li>
+            <li><a href="/#about" class="footer__link">About</a></li>
+            <li><a href="/#experience" class="footer__link">Experience</a></li>
+            <li><a href="/#projects" class="footer__link">Projects</a></li>
+            <li><a href="/#contact" class="footer__link">Contact</a></li>
+          </ul>
+
+          <div class="footer__meta">
+            <p class="footer__copy">© 2025 Steven Borkowski</p>
+            <p class="footer__version">v1.0.0 · Built by hand · Self-hosted</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
