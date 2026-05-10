@@ -76,6 +76,7 @@ Planned and potential improvements include:
 - Nginx
 - Docker
 - Git & GitHub
+- GitHub Actions
 
 ---
 
