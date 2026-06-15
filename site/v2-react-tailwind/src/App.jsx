@@ -1,12 +1,7 @@
+import HomePage from "./pages/HomePage";
 
 function App() {
-  return (
-    <main className="min-h-screen bg-black text-white">
-      <h1 className="text-5xl font-bold text-red-500">
-        Steven Borkowski
-      </h1>
-    </main>
-  )
+  return <HomePage />;
 }
 
-export default App
+export default App;
