@@ -1,7 +1,9 @@
+import Container from "../components/Container";
+
 function Footer() {
   return (
     <footer className="page__footer footer">
-      <div className="container">
+      <Container>
         <div className="footer__inner">
           <div className="footer__brand">
             <p className="footer__name">Steven Borkowski</p>
@@ -41,7 +43,7 @@ function Footer() {
             <p className="footer__version">v1.0.0 · Built by hand · Self-hosted</p>
           </div>
         </div>
-      </div>
+      </Container>
     </footer>
   );
 }

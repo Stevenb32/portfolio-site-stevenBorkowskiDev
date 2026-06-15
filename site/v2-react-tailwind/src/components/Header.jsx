@@ -1,7 +1,9 @@
+import Container from "./Container";
+
 function Header() {
   return (
     <header className="page__header">
-      <div className="container">
+      <Container>
         <nav className="nav" aria-label="Primary">
           <ul className="nav__list">
             <li className="nav__item">
@@ -31,7 +33,7 @@ function Header() {
             </li>
           </ul>
         </nav>
-      </div>
+      </Container>
     </header>
   );
 }

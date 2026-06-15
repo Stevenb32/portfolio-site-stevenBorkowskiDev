@@ -1,7 +1,9 @@
+import Container from "../components/Container";
+
 function Contact() {
   return (
     <section id="contact" className="section section-contact">
-        <div className="container">
+        <Container>
           <div className="contact">
             <div className="contact__panel card">
               <div className="contact__header">
@@ -54,7 +56,7 @@ function Contact() {
               </div>
             </div>
           </div>
-        </div>
+        </Container>
       </section>
   
   );

@@ -1,7 +1,9 @@
+import Container from "../components/Container";
+
 function Experience() {
   return (
     <section id="experience" className="section section-experience" aria-labelledby="experience-heading">
-      <div className="container">
+      <Container>
         <div className="experience">
           <div className="experience__header">
             <h2 className="experience__title" id="experience-heading">
@@ -156,7 +158,7 @@ function Experience() {
             </article>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

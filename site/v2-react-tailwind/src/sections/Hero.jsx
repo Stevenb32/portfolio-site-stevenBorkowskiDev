@@ -1,7 +1,9 @@
+import Container from "../components/Container";
+
 function Hero() {
   return (
     <section id="home" className="section section-hero">
-      <div className="container">
+      <Container>
         <div className="hero">
           <p className="hero__eyebrow">Hi I'm</p>
           <h1 className="hero__title">Steven Borkowski</h1>
@@ -10,7 +12,7 @@ function Hero() {
             automation and CI/CD skills to support faster, safer software delivery.
           </p>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }

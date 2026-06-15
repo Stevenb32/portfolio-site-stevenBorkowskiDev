@@ -1,7 +1,9 @@
+import Container from "../components/Container";
+
 function Projects() {
   return (
     <section id="projects" className="section section-projects" aria-labelledby="projects-heading">
-      <div className="container">
+      <Container>
         <div className="projects">
           <div className="projects__header">
             <h2 className="projects__title" id="projects-heading">
@@ -144,7 +146,7 @@ function Projects() {
             </article>
           </div>
         </div>
-      </div>
+      </Container>
     </section>
   );
 }
