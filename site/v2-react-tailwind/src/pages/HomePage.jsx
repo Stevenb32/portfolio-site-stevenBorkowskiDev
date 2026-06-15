@@ -15,7 +15,7 @@ function HomePage() {
 
       <Header />
 
-      <main id="main">
+      <main id="main" className="page__main">
         <Hero />
         <About />
         <Experience />

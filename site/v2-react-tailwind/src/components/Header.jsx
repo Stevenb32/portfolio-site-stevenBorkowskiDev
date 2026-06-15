@@ -1,6 +1,6 @@
 function Header() {
   return (
-    <header>
+    <header className="page__header">
       <div className="container">
         <nav className="nav" aria-label="Primary">
           <ul className="nav__list">
