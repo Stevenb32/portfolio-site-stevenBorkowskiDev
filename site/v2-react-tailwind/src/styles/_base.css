@@ -6,6 +6,7 @@ html {
   scroll-behavior: smooth;  
   scroll-padding-top: var(--scroll-offset-desktop);
   scrollbar-gutter: stable;  
+  background-color: var(--color-bg);
 }
 
 /* Accessibility Outline */

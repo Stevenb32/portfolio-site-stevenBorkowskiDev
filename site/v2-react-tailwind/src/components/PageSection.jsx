@@ -1,15 +1,15 @@
 import Container from "./Container";
 
-function Section({ children, id, className = "", ariaLabelledby }) {
+function PageSection({ children, id, className = "", ariaLabelledBy }) {
   return (
     <section
       id={id}
       className={`section ${className}`}
-      aria-labelledby={ariaLabelledby}
+      aria-labelledby={ariaLabelledBy}
     >
       <Container>{children}</Container>
     </section>
   );
 }
 
-export default Section;
+export default PageSection;

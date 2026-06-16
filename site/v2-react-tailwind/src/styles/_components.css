@@ -193,7 +193,7 @@
   grid-template-columns: 20rem 1fr;
   gap: var(--space-32);
 
-  background-color: var(--color-gray-9);
+  /* background-color: var(--color-gray-9); */
   outline: 1px solid var(--color-gray-8);
   border-radius: var(--radius-lg);
 
@@ -279,7 +279,7 @@
   flex-direction: column;
   gap: var(--space-12);
 
-  background-color: #000;
+  /* background-color: #000; */
   outline: 1px solid var(--color-gray-8);
   border-radius: var(--radius-lg);
   padding: var(--space-24);
@@ -348,7 +348,7 @@
   width: 100%;
   max-width: 72rem;
 
-  background-color: var(--color-gray-9);
+  /* background-color: var(--color-gray-9); */
   outline: 1px solid var(--color-gray-8);
   border-radius: var(--radius-lg);
 
@@ -528,7 +528,7 @@
   flex-direction: column;
   gap: var(--space-12);
 
-  background-color: var(--color-gray-9);
+  /* background-color: var(--color-gray-9); */
   outline: 1px solid var(--color-gray-8);
   border-radius: var(--radius-lg);
   padding: var(--space-24);

@@ -47,16 +47,36 @@
   padding-block: var(--space-80);
 }
 
+/* Section backgrounds */
+.page__main > .section:nth-of-type(even) {
+  background-color: var(--color-gray-9);
+}
+
+.page__main > .section:nth-of-type(odd) {
+  background-color: var(--color-bg);
+}
+
+/* Cards inside black sections */
+.page__main > .section:nth-of-type(odd) .card {
+  background-color: var(--color-gray-9);
+}
+
+/* Cards inside gray sections */
+.page__main > .section:nth-of-type(even) .card {
+  background-color: var(--color-bg);
+}
+
+
 .section-hero {
   display: flex;
   align-items: center;
   min-height: 60vh;
 }
 
-.section-about,
+/* .section-about,
 .section-projects {
   background-color: var(--color-gray-9);
-}
+} */
 
 /* Containers - Centering & Limit Width ------------------------- */
 .container {
