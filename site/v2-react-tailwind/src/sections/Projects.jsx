@@ -53,6 +53,7 @@ function Projects() {
               <a className="projects__link" href="https://tasktracker.stevenborkowski.dev/">
                 Live demo →
               </a>
+              {/* TODO: Wire project page routes after homepage conversion */}
               <a className="projects__link" href="/projects/tasktracker/">
                 Read more →
               </a>
@@ -85,6 +86,7 @@ function Projects() {
             </ul>
 
             <div className="projects__actions">
+              {/* TODO: Wire project page routes after homepage conversion */}
               <a className="projects__link" href="/projects/portfolio-v1/">
                 Read more →
               </a>
@@ -121,6 +123,7 @@ function Projects() {
             </ul>
 
             <div className="projects__actions">
+              {/* TODO: Wire project page routes after homepage conversion */}
               <a className="projects__link" href="/projects/dockerized-nginx/">
                 Read more →
               </a>
@@ -157,6 +160,7 @@ function Projects() {
             </ul>
 
             <div className="projects__actions">
+              {/* TODO: Wire project page routes after homepage conversion */}
               <a className="projects__link" href="/projects/cloudflare-dns-security/">
                 Read more →
               </a>
@@ -193,6 +197,7 @@ function Projects() {
             </ul>
 
             <div className="projects__actions">
+              {/* TODO: Wire project page routes after homepage conversion */}
               <a className="projects__link" href="/projects/raspberry-pi-home-server/">
                 Read more →
               </a>
