@@ -1,4 +1,7 @@
 import Container from "../components/Container";
+import Divider from "../components/Divider";
+import Chip from "../components/Chip";
+import Card from "../components/Card";
 
 function Projects() {
   return (
@@ -13,24 +16,38 @@ function Projects() {
 
           <div className="projects__grid">
             {/* <!-- TaskTracker Fullstack App --------------------------------------------> */}
-            <article className="projects__card card">
+            <Card as="article" className="projects__card">
               <p className="projects__meta">QA Automation · Full-Stack</p>
-              <hr className="divider" />
+
+              <Divider />
+
               <h3 className="projects__card-title">TaskTracker</h3>
               <p className="projects__card-text">
                 A full-stack task management app designed as a realistic QA/SDET practice project, with layered automated tests across
                 domain logic, API behavior, UI workflows, and Dockerized environments.
               </p>
 
-              <hr className="divider" />
+              <Divider />
 
               <ul className="projects__tech">
-                <li className="chip chip--tech">.NET</li>
-                <li className="chip chip--tech">React</li>
-                <li className="chip chip--tech">Playwright</li>
-                <li className="chip chip--tech">xUnit</li>
-                <li className="chip chip--tech">Docker</li>
-                <li className="chip chip--tech">CI/CD</li>
+                <Chip as="li" variant="tech">
+                  .NET
+                </Chip>
+                <Chip as="li" variant="tech">
+                  React
+                </Chip>
+                <Chip as="li" variant="tech">
+                  Playwright
+                </Chip>
+                <Chip as="li" variant="tech">
+                  xUnit
+                </Chip>
+                <Chip as="li" variant="tech">
+                  Docker
+                </Chip>
+                <Chip as="li" variant="tech">
+                  CI/CD
+                </Chip>
               </ul>
 
               <div className="projects__actions">
@@ -41,23 +58,31 @@ function Projects() {
                   Read more →
                 </a>
               </div>
-            </article>
+            </Card>
 
             {/* <!-- Portfolio Website v1 --------------------------------------------> */}
-            <article className="projects__card card">
+            <Card as="article" className="projects__card">
               <p className="projects__meta">Web · Infrastructure</p>
-              <hr className="divider" />
+
+              <Divider />
+
               <h3 className="projects__card-title">Portfolio Website (v1)</h3>
               <p className="projects__card-text">
                 A fully hand-coded HTML/CSS portfolio built on a custom design system using tokens, layouts, utilities, and BEM components.
               </p>
 
-              <hr className="divider" />
+              <Divider />
 
               <ul className="projects__tech">
-                <li className="chip chip--tech">HTML</li>
-                <li className="chip chip--tech">CSS</li>
-                <li className="chip chip--tech">Responsive Layout</li>
+                <Chip as="li" variant="tech">
+                  HTML
+                </Chip>
+                <Chip as="li" variant="tech">
+                  CSS
+                </Chip>
+                <Chip as="li" variant="tech">
+                  Responsive Layout
+                </Chip>
               </ul>
 
               <div className="projects__actions">
@@ -65,25 +90,35 @@ function Projects() {
                   Read more →
                 </a>
               </div>
-            </article>
+            </Card>
 
             {/* <!-- Docker & Nginx -------------------------------------------------> */}
-            <article className="projects__card card">
+            <Card as="article" className="projects__card">
               <p className="projects__meta">Infrastructure · Self-Hosting</p>
-              <hr className="divider" />
+
+              <Divider />
+
               <h3 className="projects__card-title">Dockerized Nginx Web Server</h3>
               <p className="projects__card-text">
                 Containerized an Nginx web server using Docker Compose to serve a self-hosted portfolio, with persistent configuration and
                 clear separation between edge traffic (Cloudflare) and the origin server.
               </p>
 
-              <hr className="divider" />
+              <Divider />
 
               <ul className="projects__tech">
-                <li className="chip chip--tech">Docker</li>
-                <li className="chip chip--tech">Docker Compose</li>
-                <li className="chip chip--tech">Reverse Proxy</li>
-                <li className="chip chip--tech">Persistent Storage</li>
+                <Chip as="li" variant="tech">
+                  Docker
+                </Chip>
+                <Chip as="li" variant="tech">
+                  Docker Compose
+                </Chip>
+                <Chip as="li" variant="tech">
+                  Reverse Proxy
+                </Chip>
+                <Chip as="li" variant="tech">
+                  Persistent Storage
+                </Chip>
               </ul>
 
               <div className="projects__actions">
@@ -91,25 +126,35 @@ function Projects() {
                   Read more →
                 </a>
               </div>
-            </article>
+            </Card>
 
             {/* <!-- Cloudflare -----------------------------------------------------> */}
-            <article className="projects__card card">
+            <Card as="article" className="projects__card">
               <p className="projects__meta">Infrastructure · Security</p>
-              <hr className="divider" />
+
+              <Divider />
+
               <h3 className="projects__card-title">Cloudflare DNS & Security Setup</h3>
               <p className="projects__card-text">
                 Configured Cloudflare DNS and HTTPS for a self-hosted portfolio, managing A/CNAME records, enabling Cloudflare proxying, and
                 establishing a safer public entry point.
               </p>
 
-              <hr className="divider" />
+              <Divider />
 
               <ul className="projects__tech">
-                <li className="chip chip--tech">DNS</li>
-                <li className="chip chip--tech">HTTPS</li>
-                <li className="chip chip--tech">SSL/TLS</li>
-                <li className="chip chip--tech">Origin Server (Self-Hosted)</li>
+                <Chip as="li" variant="tech">
+                  DNS
+                </Chip>
+                <Chip as="li" variant="tech">
+                  HTTPS
+                </Chip>
+                <Chip as="li" variant="tech">
+                  SSL/TLS
+                </Chip>
+                <Chip as="li" variant="tech">
+                  Origin Server (Self-Hosted)
+                </Chip>
               </ul>
 
               <div className="projects__actions">
@@ -117,25 +162,35 @@ function Projects() {
                   Read more →
                 </a>
               </div>
-            </article>
+            </Card>
 
             {/* <!-- Raspberry Pi Home Server Management ----------------------------> */}
-            <article className="projects__card card">
+            <Card as="article" className="projects__card">
               <p className="projects__meta">Infrastructure · Home Lab</p>
-              <hr className="divider" />
+
+              <Divider />
+
               <h3 className="projects__card-title">Raspberry Pi Home Server</h3>
               <p className="projects__card-text">
                 Configured a Raspberry Pi 5 as a long-running home server to practice Linux administration, secure remote access, and
                 containerized service management.
               </p>
 
-              <hr className="divider" />
+              <Divider />
 
               <ul className="projects__tech">
-                <li className="chip chip--tech">Raspberry Pi 5</li>
-                <li className="chip chip--tech">Linux</li>
-                <li className="chip chip--tech">SSH</li>
-                <li className="chip chip--tech">Docker</li>
+                <Chip as="li" variant="tech">
+                  Raspberry Pi 5
+                </Chip>
+                <Chip as="li" variant="tech">
+                  Linux
+                </Chip>
+                <Chip as="li" variant="tech">
+                  SSH
+                </Chip>
+                <Chip as="li" variant="tech">
+                  Docker
+                </Chip>
               </ul>
 
               <div className="projects__actions">
@@ -143,7 +198,7 @@ function Projects() {
                   Read more →
                 </a>
               </div>
-            </article>
+            </Card>
           </div>
         </div>
       </Container>

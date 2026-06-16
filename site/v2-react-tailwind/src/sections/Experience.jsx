@@ -1,4 +1,6 @@
 import Container from "../components/Container";
+import Chip from "../components/Chip";
+import Card from "../components/Card";
 
 function Experience() {
   return (
@@ -13,9 +15,11 @@ function Experience() {
 
           <div className="experience__list">
             {/* <!-- BayCare --> */}
-            <article className="experience__item card">
+            <Card as="article" className="experience__item">
               <div className="experience__aside">
-                <p className="chip chip--date">Nov 2022 &mdash; Present</p>
+                <Chip as="p" variant="date">
+                  Nov 2022 &mdash; Present
+                </Chip>
               </div>
 
               <div className="experience__body">
@@ -30,12 +34,24 @@ function Experience() {
                 </div>
 
                 <ul className="experience__tech">
-                  <li className="chip chip--tech">Azure DevOps</li>
-                  <li className="chip chip--tech">BrowserStack</li>
-                  <li className="chip chip--tech">SQL</li>
-                  <li className="chip chip--tech">Web</li>
-                  <li className="chip chip--tech">Mobile</li>
-                  {/* <!-- <li className="chip chip--tech">RPA</li> --> */}
+                  <Chip as="li" variant="tech">
+                    Azure DevOps
+                  </Chip>
+                  <Chip as="li" variant="tech">
+                    BroswerStack
+                  </Chip>
+                  <Chip as="li" variant="tech">
+                    SQL
+                  </Chip>
+                  <Chip as="li" variant="tech">
+                    Web
+                  </Chip>
+                  <Chip as="li" variant="tech">
+                    Mobile
+                  </Chip>
+                  <Chip as="li" variant="tech">
+                    Mobile
+                  </Chip>
                 </ul>
 
                 <ul className="experience__points">
@@ -59,11 +75,14 @@ function Experience() {
                   </li>
                 </ul>
               </div>
-            </article>
+            </Card>
+
             {/* <!-- Brandt --> */}
-            <article className="experience__item card">
+            <Card as="article" className="experience__item">
               <div className="experience__aside">
-                <p className="chip chip--date">Jul 2022 &mdash; Nov 2022</p>
+                <Chip as="p" variant="date">
+                  Jul 2022 &mdash; Nov 2022
+                </Chip>
               </div>
 
               <div className="experience__body">
@@ -78,12 +97,24 @@ function Experience() {
                 </div>
 
                 <ul className="experience__tech">
-                  <li className="chip chip--tech">Jira</li>
-                  <li className="chip chip--tech">BrowserStack</li>
-                  <li className="chip chip--tech">SQL</li>
-                  <li className="chip chip--tech">Web</li>
-                  <li className="chip chip--tech">Mobile</li>
-                  <li className="chip chip--tech">POS</li>
+                  <Chip as="li" variant="tech">
+                    Jira
+                  </Chip>
+                  <Chip as="li" variant="tech">
+                    BrowserStack
+                  </Chip>
+                  <Chip as="li" variant="tech">
+                    SQL
+                  </Chip>
+                  <Chip as="li" variant="tech">
+                    Web
+                  </Chip>
+                  <Chip as="li" variant="tech">
+                    Mobile
+                  </Chip>
+                  <Chip as="li" variant="tech">
+                    POS
+                  </Chip>
                 </ul>
 
                 <ul className="experience__points">
@@ -108,11 +139,14 @@ function Experience() {
                   </li>
                 </ul>
               </div>
-            </article>
+            </Card>
+
             {/* <!-- NTC --> */}
-            <article className="experience__item card">
+            <Card as="article" className="experience__item">
               <div className="experience__aside">
-                <p className="chip chip--date">Jan 2019 &mdash; Jul 2022</p>
+                <Chip as="p" variant="date">
+                  Jan 2019 &mdash; Jul 2022
+                </Chip>
               </div>
 
               <div className="experience__body">
@@ -127,9 +161,15 @@ function Experience() {
                 </div>
 
                 <ul className="experience__tech">
-                  <li className="chip chip--tech">Oracle Forms</li>
-                  <li className="chip chip--tech">SQL</li>
-                  <li className="chip chip--tech">Web</li>
+                  <Chip as="li" variant="tech">
+                    Oracle Forms
+                  </Chip>
+                  <Chip as="li" variant="tech">
+                    SQL
+                  </Chip>
+                  <Chip as="li" variant="tech">
+                    Web
+                  </Chip>
                 </ul>
 
                 <ul className="experience__points">
@@ -155,7 +195,7 @@ function Experience() {
                   </li>
                 </ul>
               </div>
-            </article>
+            </Card>
           </div>
         </div>
       </Container>
