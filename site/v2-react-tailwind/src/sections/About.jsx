@@ -2,7 +2,7 @@ import PageSection from "../components/PageSection";
 
 function About() {
   return (
-    <PageSection id="about" className="section section-about" ariaLabelledBy="about-heading">
+    <PageSection id="about" className="section-about" ariaLabelledBy="about-heading">
       <div className="about">
         <div className="about__header">
           <h2 className="about__title" id="about-heading">

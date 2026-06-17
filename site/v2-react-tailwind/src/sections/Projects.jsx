@@ -5,7 +5,7 @@ import Card from "../components/Card";
 
 function Projects() {
   return (
-    <PageSection id="projects" className="section section-projects" aria-labelledBy="projects-heading">
+    <PageSection id="projects" className="section-projects" ariaLabelledBy="projects-heading">
       <div className="projects">
         <div className="projects__header">
           <h2 className="projects__title" id="projects-heading">

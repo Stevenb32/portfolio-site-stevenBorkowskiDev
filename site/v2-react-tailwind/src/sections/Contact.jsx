@@ -4,7 +4,7 @@ import Card from "../components/Card";
 
 function Contact() {
   return (
-    <PageSection id="contact" className="section section-contact" aria-labelledBy="contact-heading">
+    <PageSection id="contact" className="section-contact" ariaLabelledBy="contact-heading">
       <div className="contact">
         <Card as="div" className="contact__panel">
           <div className="contact__header">

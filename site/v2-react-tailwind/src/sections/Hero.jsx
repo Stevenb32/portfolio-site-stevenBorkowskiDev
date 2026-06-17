@@ -2,7 +2,7 @@ import PageSection from "../components/PageSection";
 
 function Hero() {
   return (
-    <PageSection id="home" className="section section-hero">
+    <PageSection id="home" className="section-hero">
       <div className="hero">
         <p className="hero__eyebrow">Hi I'm</p>
         <h1 className="hero__title">Steven Borkowski</h1>
