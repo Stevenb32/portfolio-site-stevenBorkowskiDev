@@ -62,11 +62,7 @@ function Experience() {
 
         <div className="experience__list">
           {experienceItems.map((experience) => (
-            <Card
-              className="experience__item"
-              as="article"
-              key={experience.id}
-            >
+            <Card key={experience.id} as="article" className="experience__item" >
               <div className="experience__aside">
                 <Chip as="p" variant="date">
                   {experience.date}
@@ -78,19 +74,15 @@ function Experience() {
                   <h3 className="experience__role">{experience.role}</h3>
 
                   <p className="experience__meta">
-                    <span className="experience__industry">
-                      {experience.industry}
-                    </span>
+                    <span className="experience__industry">{experience.industry}</span>
                     <span className="experience__meta-sep">•</span>
-                    <span className="experience__company">
-                      {experience.company}
-                    </span>
+                    <span className="experience__company">{experience.company}</span>
                   </p>
                 </div>
 
                 <ul className="experience__tech">
                   {experience.tech.map((tech) => (
-                    <Chip as="li" variant="tech" key={tech}>
+                    <Chip key={tech} as="li" variant="tech">
                       {tech}
                     </Chip>
                   ))}
@@ -98,7 +90,7 @@ function Experience() {
 
                 <ul className="experience__points">
                   {experience.points.map((point) => (
-                    <li className="experience__point" key={point}>
+                    <li key={point} className="experience__point">
                       {point}
                     </li>
                   ))}

@@ -12,8 +12,8 @@ function Nav() {
 
       <ul className="nav__list">
         {navLinks.map((link) => (
-          <li className="nav__item" key={link.href}>
-            <a className="nav__link" href={link.href}>
+          <li key={link.href} className="nav__item" >
+            <a className="nav__link" href={link.href}  >
               {link.label}
             </a>
           </li>
