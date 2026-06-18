@@ -1,5 +1,5 @@
 function Divider() {
-  return <hr class="divider" />;
+  return <hr className="divider" />;
 }
 
 export default Divider;

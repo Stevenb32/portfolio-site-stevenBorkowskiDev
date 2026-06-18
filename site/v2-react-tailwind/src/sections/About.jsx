@@ -1,35 +1,9 @@
 import PageSection from "../components/PageSection";
+import { educationItems } from "../data/education";
+import { certificationItems } from "../data/certifications";
 
 const aboutIntro =
   "QA Team Lead with 7 years of experience focused on delivering high-quality software across web, mobile, and enterprise systems. Strong background in manual testing, test strategy, and QA leadership, with hands-on experience collaborating closely with development and product teams throughout the SDLC. Currently expanding into test automation and CI/CD through self-driven projects to support faster, more reliable software delivery.";
-
-const educationItems = [
-  {
-    id: "spc",
-    college: "St. Petersburg College",
-    degree: "BAS: Technology Development and Management — Software Assurance",
-  },
-  {
-    id: "phsc",
-    college: "Pasco-Hernando State College",
-    degree: "AS: Computer Programming and Analysis",
-  },
-];
-
-const certificationItems = [
-  {
-    id: "istqb",
-    name: "ISTQB Certified Tester Foundation Level",
-  },
-  {
-    id: "csharp",
-    name: "Foundational C# with Microsoft",
-  },
-  {
-    id: "azure",
-    name: "Microsoft Azure Fundamentals",
-  },
-];
 
 function About() {
   return (

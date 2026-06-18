@@ -1,0 +1,47 @@
+export const experienceItems = [
+  {
+    id: "baycare",
+    date: "Nov 2022 — Present",
+    role: "QA Test Analyst Team Lead",
+    industry: "Healthcare",
+    company: "BayCare Health System",
+    tech: ["Azure DevOps", "BrowserStack", "SQL", "Web", "Mobile"],
+    points: [
+      "Led QA strategy and execution across three concurrent initiatives, owning release quality and mentoring a team of four QA analysts.",
+      "Designed and scaled a modular QA framework, initially built for a mobile app (50k+ users) and later adopted as the organizational standard.",
+      "Established structured regression and release validation coverage, reducing late-cycle risk.",
+      "Partnered with product and development leadership to shift QA earlier in the SDLC, clarifying acceptance criteria and reducing rework.",
+      "Authored QA SOPs and performance metrics, improving visibility into test coverage, risk, and team throughput.",
+    ],
+  },
+  {
+    id: "brandt",
+    date: "Jul 2022 — Nov 2022",
+    role: "QA Test Analyst",
+    industry: "Government Services",
+    company: "Brandt Information Services",
+    tech: ["Jira", "BrowserStack", "SQL", "Web", "Mobile", "POS"],
+    points: [
+      "Served as sole QA for a statewide hunting and fishing license platform spanning web, mobile, and POS terminals, supporting high-traffic seasonal usage.",
+      "Owned end-to-end quality, defining test strategy, coverage scope, and release readiness.",
+      "Tested complex business rules around licensing eligibility, fees, and renewals, ensuring correct behavior across user types and jurisdictions.",
+      "Validated backend transactions and data integrity using SQL, ensuring accuracy across licensing, payments, and fulfillment workflows.",
+      "Executed cross-browser and cross-device testing using BrowserStack, ensuring accessibility and stability across diverse user environments.",
+    ],
+  },
+  {
+    id: "ntc",
+    date: "Jan 2019 — Jul 2022",
+    role: "QA Test Analyst",
+    industry: "Mortgage & Financial Services",
+    company: "Nationwide Title Clearing",
+    tech: ["Oracle Forms", "SQL", "Web"],
+    points: [
+      "Tested complex, high-risk mortgage-processing workflows spanning all 50 U.S. states and counties, ensuring compliance with region-specific legal and regulatory requirements.",
+      "Validated end-to-end workflows including mortgage intake, data entry, document generation, e-signing, and e-recording, supporting national banking clients.",
+      "Leveraged SQL for backend validation and data setup, verifying order lifecycle transitions, status codes, and edge-case scenarios in high-volume financial systems.",
+      "Built and maintained robust regression coverage for SaaS and Oracle Forms applications, enabling safer releases in an Agile/Scrum environment.",
+      "Served on the Change Advisory Board (CAB), assessing deployment risk, validating release scope, and influencing production go/no-go decisions.",
+    ],
+  },
+];
