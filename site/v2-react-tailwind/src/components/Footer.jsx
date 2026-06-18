@@ -1,5 +1,33 @@
 import Container from "../components/Container";
 
+const footerLinks = [
+  {
+    id: "home",
+    label: "Home",
+    href: "#home",
+  },
+  {
+    id: "about",
+    label: "About",
+    href: "#about",
+  },
+  {
+    id: "experience",
+    label: "Experience",
+    href: "#experience",
+  },
+  {
+    id: "projects",
+    label: "Projects",
+    href: "#projects",
+  },
+  {
+    id: "contact",
+    label: "Contact",
+    href: "#contact",
+  },
+];
+
 function Footer() {
   return (
     <footer className="page__footer footer">
@@ -11,31 +39,13 @@ function Footer() {
           </div>
 
           <ul className="footer__links">
-            <li>
-              <a href="#home" className="footer__link">
-                Home
-              </a>
-            </li>
-            <li>
-              <a href="#about" className="footer__link">
-                About
-              </a>
-            </li>
-            <li>
-              <a href="#experience" className="footer__link">
-                Experience
-              </a>
-            </li>
-            <li>
-              <a href="#projects" className="footer__link">
-                Projects
-              </a>
-            </li>
-            <li>
-              <a href="#contact" className="footer__link">
-                Contact
-              </a>
-            </li>
+            {footerLinks.map((link) => (
+              <li key={link.id}>
+                <a className="footer__link" href={link.href}>
+                  {link.label}
+                </a>
+              </li>
+            ))}
           </ul>
 
           <div className="footer__meta">
