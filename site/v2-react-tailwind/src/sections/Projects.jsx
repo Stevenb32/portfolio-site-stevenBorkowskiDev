@@ -40,7 +40,7 @@ function Projects() {
 
               <div className="projects__actions">
                 {project.links.map((link) => (
-                  <a key={link.label} className="projects__link" href={link.href}>
+                  <a key={link.id} className="projects__link" href={link.href}>
                     {link.label}
                   </a>
                 ))}

@@ -8,10 +8,12 @@ export const projectItems = [
     tech: [".NET", "React", "Playwright", "xUnit", "Docker", "CI/CD"],
     links: [
       {
+        id: "live",
         label: "Live Site →",
         href: "https://tasktracker.stevenborkowski.dev/",
       },
       {
+        id: "details",
         label: "Project Details →",
         href: "/projects/tasktracker/",
       },
@@ -26,6 +28,7 @@ export const projectItems = [
     tech: ["HTML", "CSS", "Responsive Layout"],
     links: [
       {
+        id: "details",
         label: "Project Details →",
         href: "/projects/portfolio-v1/",
       },
@@ -40,6 +43,7 @@ export const projectItems = [
     tech: ["Docker", "Docker Compose", "Reverse Proxy", "Persistent Storage"],
     links: [
       {
+        id: "details",
         label: "Project Details →",
         href: "/projects/dockerized-nginx/",
       },
@@ -54,6 +58,7 @@ export const projectItems = [
     tech: ["DNS", "HTTPS", "SSL/TLS", "Origin Server (Self-Hosted)"],
     links: [
       {
+        id: "details",
         label: "Project Details →",
         href: "/projects/cloudflare-dns-security/",
       },
@@ -68,6 +73,7 @@ export const projectItems = [
     tech: ["Raspberry Pi 5", "Linux", "SSH", "Docker"],
     links: [
       {
+        id: "details",
         label: "Project Details →",
         href: "/projects/raspberry-pi-home-server/",
       },
