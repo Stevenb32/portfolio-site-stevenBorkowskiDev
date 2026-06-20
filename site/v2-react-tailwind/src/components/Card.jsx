@@ -1,7 +1,7 @@
-function Card({ children, className = "", as = "article" }) {
+function Card({ children, className = "", as = "article", ...props }) {
   const Tag = as;
 
-  return <Tag className={`${className} card`}>{children}</Tag>;
+  return <Tag className={`${className} card`} {...props}>{children}</Tag>;
 }
 
 export default Card;
