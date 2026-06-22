@@ -75,7 +75,7 @@ export const projectPages = [
     ],
   },
   {
-    id: "website-v1",
+    id: "portfolio-v1",
     categories: ["Web", "Infrastructure"],
     title: "Portfolio Website (v1)",
     summary:
@@ -129,7 +129,7 @@ export const projectPages = [
     ],
   },
   {
-    id: "web-server",
+    id: "dockerized-nginx",
     categories: ["Infrastructure", "Self-Hosting"],
     title: "Dockerized Nginx Web Server",
     summary:
@@ -183,7 +183,7 @@ export const projectPages = [
     ],
   },
   {
-    id: "cloudflare",
+    id: "cloudflare-dns-security",
     categories: ["Infrastructure", "Security"],
     title: "Cloudflare DNS & Security Setup",
     summary:
@@ -236,7 +236,7 @@ export const projectPages = [
     ],
   },
   {
-    id: "raspberry-pi",
+    id: "raspberry-pi-home-server",
     categories: ["Infrastructure ", "Home Lab"],
     title: "Raspberry Pi Home Server",
     summary:

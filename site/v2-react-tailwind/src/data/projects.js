@@ -1,6 +1,6 @@
 export const projectItems = [
   {
-    id: "taskTracker",
+    id: "tasktracker",
     categories: ["QA Automation", "Full-Stack"],
     title: "TaskTracker",
     description:
@@ -20,7 +20,7 @@ export const projectItems = [
     ],
   },
   {
-    id: "portfolioV1",
+    id: "portfolio-v1",
     categories: ["Web", "Infrastructure"],
     title: "Portfolio Website (v1)",
     description:
@@ -35,7 +35,7 @@ export const projectItems = [
     ],
   },
   {
-    id: "webServer",
+    id: "dockerized-nginx",
     categories: ["Infrastructure", "Self-Hosting"],
     title: "Dockerized Nginx Web Server",
     description:
@@ -50,7 +50,7 @@ export const projectItems = [
     ],
   },
   {
-    id: "cloudflare",
+    id: "cloudflare-dns-security",
     categories: ["Infrastructure", "Security"],
     title: "Cloudflare DNS & Security Setup",
     description:
@@ -65,7 +65,7 @@ export const projectItems = [
     ],
   },
   {
-    id: "raspberryPi",
+    id: "raspberry-pi-home-server",
     categories: ["Infrastructure", "Home Lab"],
     title: "Raspberry Pi Home Server",
     description:

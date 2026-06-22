@@ -1,3 +1,5 @@
+import { useParams } from "react-router-dom";
+import NotFoundPage from "./NotFoundPage";
 import SkipLink from "../components/SkipLink";
 import Container from "../components/Container";
 import Header from "../components/Header";
@@ -6,11 +8,15 @@ import Card from "../components/Card";
 import Chip from "../components/Chip";
 import { projectPages } from "../data/projectPages";
 
-const taskTrackerProject = projectPages.find(
-  (project) => project.id === "tasktracker"
-);
-
 function ProjectPage() {
+  const { projectId } = useParams();
+
+  const project = projectPages.find((project) => project.id === projectId);
+
+  if (!project) {
+    return <NotFoundPage />;
+  }
+
   return (
     <div>
       <SkipLink />
@@ -21,12 +27,12 @@ function ProjectPage() {
         <section className="section section-project">
           <Container>
             <div className="project">
-              <p className="projects__meta">{taskTrackerProject.categories.join(" · ")}</p>
-              <h1 className="project__title">{taskTrackerProject.title}</h1>
-              <p className="project__summary">{taskTrackerProject.summary}</p>
+              <p className="projects__meta">{project.categories.join(" · ")}</p>
+              <h1 className="project__title">{project.title}</h1>
+              <p className="project__summary">{project.summary}</p>
 
               <div className="project__grid">
-                {taskTrackerProject.cards.map((card) => (
+                {project.cards.map((card) => (
                   <Card key={card.id} as="section" className="project__card" aria-labelledby={`project-${card.id}`}>
                     <h2 id={`project-${card.id}`} className="project__heading">
                       {card.title}
@@ -44,7 +50,7 @@ function ProjectPage() {
                         {card.technologies.map((tech) => (
                           <Chip key={tech} as="li" variant="tech">
                             {tech}
-                          </Chip>   
+                          </Chip>
                         ))}
                       </ul>
                     )}
@@ -60,7 +66,7 @@ function ProjectPage() {
                 ))}
 
                 <div className="project__links">
-                  {taskTrackerProject.links.map((link) => (
+                  {project.links.map((link) => (
                     <a key={link.id} className="project__back" href={link.href}>
                       {link.label}
                     </a>
