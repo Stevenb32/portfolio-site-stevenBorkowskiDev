@@ -2,9 +2,8 @@ import PageSection from "../components/PageSection";
 import Divider from "../components/Divider";
 import Chip from "../components/Chip";
 import Card from "../components/Card";
+import AppLink from "../components/AppLink";
 import { projectItems } from "../data/projects";
-
-
 
 function Projects() {
   return (
@@ -40,9 +39,7 @@ function Projects() {
 
               <div className="projects__actions">
                 {project.links.map((link) => (
-                  <a key={link.id} className="projects__link" href={link.href}>
-                    {link.label}
-                  </a>
+                  <AppLink key={link.id} link={link} className="projects__link" />
                 ))}
               </div>
             </Card>

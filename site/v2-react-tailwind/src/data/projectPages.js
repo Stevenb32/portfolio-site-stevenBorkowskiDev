@@ -61,11 +61,13 @@ export const projectPages = [
         id: "live",
         label: "Live Site →",
         href: "https://tasktracker.stevenborkowski.dev/",
+        type: "external",
       },
       {
         id: "code",
         label: "View Code →",
         href: "https://github.com/Stevenb32/TaskTracker",
+        type: "external",
       },
       {
         id: "home",
