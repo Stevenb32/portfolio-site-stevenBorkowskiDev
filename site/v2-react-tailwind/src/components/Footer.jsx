@@ -1,4 +1,5 @@
 import Container from "./Container";
+import AppLink from "./AppLink";
 import { footerLinks } from "../data/navigation";
 
 
@@ -16,9 +17,7 @@ function Footer() {
           <ul className="footer__links">
             {footerLinks.map((link) => (
               <li key={link.id}>
-                <a className="footer__link" href={link.href}>
-                  {link.label}
-                </a>
+                <AppLink link={link} className="footer__link" />
               </li>
             ))}
           </ul>

@@ -2,14 +2,14 @@ import { Link } from "react-router-dom";
 
 function AppLink({ link, className, children }) {
   const {
-    type = "external",
-    href,
-    label,
-    ariaLabel,
-    target,
-    rel,
-    download,
-  } = link;
+  label,
+  href,
+  type = "external",
+  ariaLabel,
+  target,
+  rel,
+  download,
+} = link;
 
   const content = children ?? label;
 

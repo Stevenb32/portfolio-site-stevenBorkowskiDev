@@ -12,6 +12,8 @@ export const projectItems = [
         label: "Live Site →",
         href: "https://tasktracker.stevenborkowski.dev/",
         type: "external",
+        target: "_blank",
+        rel: "noreferrer",
       },
       {
         id: "details",

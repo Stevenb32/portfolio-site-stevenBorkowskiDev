@@ -6,6 +6,8 @@ export const contactLinks = [
     ariaLabel: "LinkedIn profile",
     iconName: "logo-linkedin",
     size: "large",
+    target: "_blank",
+    rel: "noreferrer",
   },
   {
     id: "gitHub",
@@ -14,6 +16,8 @@ export const contactLinks = [
     ariaLabel: "GitHub profile",
     iconName: "logo-github",
     size: "large",
+    target: "_blank",
+    rel: "noreferrer",
   },
   {
     id: "resume",
@@ -22,5 +26,7 @@ export const contactLinks = [
     ariaLabel: "Open resume (PDF)",
     iconName: "document-outline",
     size: "large",
+    target: "_blank",
+    rel: "noreferrer",
   },
 ];

@@ -1,3 +1,4 @@
+import AppLink from "./AppLink";
 import { navLinks } from "../data/navigation";
 
 function Nav() {
@@ -6,9 +7,7 @@ function Nav() {
       <ul className="nav__list">
         {navLinks.map((link) => (
           <li key={link.id} className="nav__item">
-            <a className="nav__link" href={link.href}>
-              {link.label}
-            </a>
+            <AppLink link={link} className="nav__link" />
           </li>
         ))}
       </ul>
