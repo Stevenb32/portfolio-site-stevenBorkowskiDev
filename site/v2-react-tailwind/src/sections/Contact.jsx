@@ -1,7 +1,8 @@
 import PageSection from "../components/PageSection";
 import Divider from "../components/Divider";
 import Card from "../components/Card";
-import { contactLinks } from "../data/contactLinks";
+import AppLink from "../components/AppLink";
+import { primaryContactLink, contactLinks } from "../data/contactLinks";
 
 function Contact() {
   return (
@@ -24,22 +25,13 @@ function Contact() {
           </div>
 
           <div className="contact__actions">
-            <a className="contact__primary" href="mailto:stevenericborkowski@gmail.com">
-              Email Me
-            </a>
+            <AppLink link={primaryContactLink} className="contact__primary" />
 
             <div className="contact__secondary">
               {contactLinks.map((link) => (
-                <a
-                  key={link.id}
-                  className="contact__secondary-link"
-                  href={link.href}
-                  target="_blank"
-                  rel="noreferrer"
-                  aria-label={link.ariaLabel}
-                >
+                <AppLink key={link.id} link={link} className="contact__secondary-link">
                   <ion-icon name={link.iconName} size={link.size}></ion-icon>
-                </a>
+                </AppLink>
               ))}
             </div>
           </div>

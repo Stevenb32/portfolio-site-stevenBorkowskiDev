@@ -1,3 +1,10 @@
+export const primaryContactLink = {
+  id: "email",
+  label: "Email Me",
+  href: "mailto:stevenericborkowski@gmail.com",
+  type: "email",
+};
+
 export const contactLinks = [
   {
     id: "linkedin",
@@ -28,5 +35,6 @@ export const contactLinks = [
     size: "large",
     target: "_blank",
     rel: "noreferrer",
+    download: false,
   },
 ];

@@ -6,6 +6,7 @@ import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Card from "../components/Card";
 import Chip from "../components/Chip";
+import AppLink from "../components/AppLink";
 import { projectPages } from "../data/projectPages";
 
 function ProjectPage() {
@@ -67,9 +68,7 @@ function ProjectPage() {
 
                 <div className="project__links">
                   {project.links.map((link) => (
-                    <a key={link.id} className="project__back" href={link.href}>
-                      {link.label}
-                    </a>
+                    <AppLink key={link.id} link={link} className="project__back" />
                   ))}
                 </div>
               </div>
