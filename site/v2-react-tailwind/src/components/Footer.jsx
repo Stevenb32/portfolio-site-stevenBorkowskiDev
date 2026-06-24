@@ -23,7 +23,7 @@ function Footer() {
           </ul>
 
           <div className="footer__meta">
-            <p className="footer__copy">© 2026 Steven Borkowski</p>
+            <p className="footer__copy">© {new Date().getFullYear()} Steven Borkowski</p>
             <p className="footer__version">v1.0.0 · Built by hand · Self-hosted</p>
           </div>
         </div>
