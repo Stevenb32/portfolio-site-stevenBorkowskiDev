@@ -2,31 +2,31 @@ export const navLinks = [
   {
     id: "home",
     label: "Home",
-    href: "#home",
+    href: "/#home",
     type: "anchor",
   },
   {
     id: "about",
     label: "About",
-    href: "#about",
+    href: "/#about",
     type: "anchor",
   },
   {
     id: "experience",
     label: "Experience",
-    href: "#experience",
+    href: "/#experience",
     type: "anchor",
   },
   {
     id: "projects",
     label: "Projects",
-    href: "#projects",
+    href: "/#projects",
     type: "anchor",
   },
   {
     id: "contact",
     label: "Contact",
-    href: "#contact",
+    href: "/#contact",
     type: "anchor",
   },
 ];
@@ -35,31 +35,31 @@ export const footerLinks = [
   {
     id: "home",
     label: "Home",
-    href: "#home",
+    href: "/#home",
     type: "anchor",
   },
   {
     id: "about",
     label: "About",
-    href: "#about",
+    href: "/#about",
     type: "anchor",
   },
   {
     id: "experience",
     label: "Experience",
-    href: "#experience",
+    href: "/#experience",
     type: "anchor",
   },
   {
     id: "projects",
     label: "Projects",
-    href: "#projects",
+    href: "/#projects",
     type: "anchor",
   },
   {
     id: "contact",
     label: "Contact",
-    href: "#contact",
+    href: "/#contact",
     type: "anchor",
   },
 ];
