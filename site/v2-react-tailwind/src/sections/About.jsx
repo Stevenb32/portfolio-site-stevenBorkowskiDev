@@ -2,9 +2,6 @@ import PageSection from "../components/PageSection";
 import { educationItems } from "../data/education";
 import { certificationItems } from "../data/certifications";
 
-const aboutIntro =
-  "QA Team Lead with 7 years of experience focused on delivering high-quality software across web, mobile, and enterprise systems. Strong background in manual testing, test strategy, and QA leadership, with hands-on experience collaborating closely with development and product teams throughout the SDLC. Currently expanding into test automation and CI/CD through self-driven projects to support faster, more reliable software delivery.";
-
 function About() {
   return (
     <PageSection id="about" className="section-about" ariaLabelledBy="about-heading">
@@ -13,7 +10,20 @@ function About() {
           <h2 id="about-heading" className="about__title">
             About Me
           </h2>
-          <p className="about__intro">{aboutIntro}</p>
+          <p className="about__intro">
+            I’ve always been curious about the systems people build and rely on every day — software, hardware, networks, infrastructure,
+            and the layers of technology that make modern tools feel seamless.
+          </p>
+          <p className="about__intro">
+            That curiosity shapes how I approach quality today: looking beyond whether something works on the surface and trying to
+            understand how the pieces fit together, where risk can hide, and how teams can build more reliable software.
+          </p>
+          <p className="about__intro">
+            My QA background gave me a practical way to study those systems from the inside: testing workflows, validating data,
+            understanding edge cases, supporting releases, and helping teams find risk before users do. I’m now focused on growing deeper
+            into QA automation and SDET-style work, using hands-on projects to connect strong QA leadership with modern automation, CI/CD,
+            and software delivery practices.
+          </p>
         </div>
 
         <div className="about__group">
