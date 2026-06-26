@@ -68,40 +68,37 @@ export const projectPages = [
     title: "Portfolio Website (v2)",
 
     cards: [
-    {
-      id: "overview",
-      title: "Overview",
-      paragraphs: [
-        "Portfolio Website (v2) is a React and Tailwind CSS rebuild of my personal portfolio site. The goal of this version was to move beyond a static HTML and CSS implementation and rebuild the site with reusable components, shared project data, client-side routing, and a structure that is easier to maintain as the content grows.",
-        "This version gives me a stronger frontend foundation for presenting QA leadership, automation, infrastructure, and software projects in one place. I used the rebuild as a way to practice how modern frontend applications are organized, how content can be driven from data, and how routing and reusable UI patterns can make a site easier to extend over time.",
-      ],
-    },
-    {
-      id: "implementation",
-      title: "Implementation",
-      paragraphs: [ "I rebuilt the portfolio as a React application using reusable components for shared layout, cards, chips, page sections, navigation, and project detail pages. Instead of hardcoding each section directly into the page markup, I started organizing the site around reusable data and component patterns so the content can be easier to update as the portfolio grows.", "I added React Router to support dedicated project detail pages while keeping the main portfolio page focused and easy to navigate. This gave each project more room for explanation without overcrowding the homepage, and it helped me practice how routed frontend applications are structured.", "I also started moving the styling direction toward Tailwind CSS so layout, spacing, and responsive behavior can be managed closer to the components. The goal was to make the site easier to maintain, easier to extend, and better structured for future content updates as I continue adding QA automation, infrastructure, and software projects.", ],
-    },
-    {
-      id: "frontend-quality",
-      title: "Frontend Quality",
-      paragraphs: [
-        "I approached this rebuild with a quality-focused mindset, not just as a visual redesign. I paid attention to component boundaries, repeated UI patterns, route behavior, responsive layouts, semantic structure, and content maintainability. These are the same kinds of details that matter when testing and supporting a real frontend application.",
-        "The project also helped me think more clearly about how a UI should be structured to support future testing. Reusable components, predictable data shapes, clear page routes, accessible markup, and consistent interaction patterns make an application easier to understand, easier to validate, and easier to expand without creating unnecessary regression risk.",
-      ],
-    },
-    {
-      id: "tech-stack",
-      title: "Tech Stack",
-      technologies: [
-        "React",
-        "Tailwind CSS",
-        "React Router",
-        "Vite",
-        "JavaScript",
-        "Responsive Design",
-      ],
-    },
-  ],
+      {
+        id: "overview",
+        title: "Overview",
+        paragraphs: [
+          "Portfolio Website (v2) is a React and Tailwind CSS rebuild of my personal portfolio site. The goal of this version was to move beyond a static HTML and CSS implementation and rebuild the site with reusable components, shared project data, client-side routing, and a structure that is easier to maintain as the content grows.",
+          "This version gives me a stronger frontend foundation for presenting QA leadership, automation, infrastructure, and software projects in one place. I used the rebuild as a way to practice how modern frontend applications are organized, how content can be driven from data, and how routing and reusable UI patterns can make a site easier to extend over time.",
+        ],
+      },
+      {
+        id: "implementation",
+        title: "Implementation",
+        paragraphs: [
+          "I rebuilt the portfolio as a React application using reusable components for shared layout, cards, chips, page sections, navigation, and project detail pages. Instead of hardcoding each section directly into the page markup, I started organizing the site around reusable data and component patterns so the content can be easier to update as the portfolio grows.",
+          "I added React Router to support dedicated project detail pages while keeping the main portfolio page focused and easy to navigate. This gave each project more room for explanation without overcrowding the homepage, and it helped me practice how routed frontend applications are structured.",
+          "I also started moving the styling direction toward Tailwind CSS so layout, spacing, and responsive behavior can be managed closer to the components. The goal was to make the site easier to maintain, easier to extend, and better structured for future content updates as I continue adding QA automation, infrastructure, and software projects.",
+        ],
+      },
+      {
+        id: "frontend-quality",
+        title: "Frontend Quality",
+        paragraphs: [
+          "I approached this rebuild with a quality-focused mindset, not just as a visual redesign. I paid attention to component boundaries, repeated UI patterns, route behavior, responsive layouts, semantic structure, and content maintainability. These are the same kinds of details that matter when testing and supporting a real frontend application.",
+          "The project also helped me think more clearly about how a UI should be structured to support future testing. Reusable components, predictable data shapes, clear page routes, accessible markup, and consistent interaction patterns make an application easier to understand, easier to validate, and easier to expand without creating unnecessary regression risk.",
+        ],
+      },
+      {
+        id: "tech-stack",
+        title: "Tech Stack",
+        technologies: ["React", "Tailwind CSS", "React Router", "Vite", "JavaScript", "Responsive Design"],
+      },
+    ],
 
     links: [
       {
@@ -122,20 +119,25 @@ export const projectPages = [
         id: "overview",
         title: "Overview",
         paragraphs: [
-          "This project represents the first full version of a personal portfolio website built entirely with hand-written HTML and CSS, without frameworks or site builders. The goal was to develop a strong foundation in front-end fundamentals before introducing abstraction layers or JavaScript frameworks.",
-          "The site is designed as a long-lived, self-hosted project and serves both as a professional portfolio and a learning platform. Emphasis was placed on semantic structure, accessibility, responsive behavior, and a scalable CSS architecture that can support future iterations.",
+          "Portfolio Website (v1) was the first full version of my personal portfolio site, built with hand-written HTML and CSS before introducing JavaScript frameworks or utility-first styling. The goal was to strengthen my frontend fundamentals by building a real, public-facing site from the ground up instead of relying on templates or site builders.",
+          "This version gave me a foundation for understanding how page structure, layout, styling systems, accessibility, and responsive behavior all work together. It also became the starting point for a longer-term portfolio platform that I could later rebuild with React, Tailwind CSS, routing, reusable data, and more maintainable content workflows.",
         ],
       },
       {
-        id: "highlights",
-        title: "Highlights",
-        bullets: [
-          "Built a fully responsive portfolio using semantic HTML and modern CSS.",
-          "Designed a custom CSS architecture using tokens, layouts, utilities, and BEM-style components.",
-          "Implemented consistent spacing, typography, and color systems using design tokens.",
-          "Focused on accessibility with proper landmarks, heading hierarchy, and keyboard navigation.",
-          "Structured the site to support long-term iteration and versioned future rebuilds.",
-          "Deployed the site as a self-hosted static application served through Dockerized Nginx.",
+        id: "implementation",
+        title: "Implementation",
+        paragraphs: [
+          "I built the site as a multi-section static portfolio using semantic HTML and custom CSS. The page included sections for the hero, about content, experience, projects, certifications, and contact information, giving me practice organizing real portfolio content into a clear page structure.",
+          "On the styling side, I created reusable patterns for cards, chips, containers, dividers, and section layouts so the design stayed consistent across the site. I also organized the CSS around tokens, reset styles, base styles, layout rules, utilities, and component-specific classes, which helped me understand how maintainable CSS architecture supports long-term iteration.",
+          "This version was also deployed as part of my self-hosted web environment using Dockerized Nginx, which helped connect the frontend work to real hosting and deployment concepts instead of only running the site locally.",
+        ],
+      },
+      {
+        id: "frontend-foundation",
+        title: "Frontend Foundation",
+        paragraphs: [
+          "A major focus of this project was learning how frontend structure affects software quality. I paid attention to semantic HTML, heading hierarchy, landmark regions, keyboard navigation, focus states, readable content structure, and responsive layouts so the site would be easier to use, inspect, maintain, and improve.",
+          "This connects naturally to QA and SDET work because frontend quality is not only about visual design. Clear markup, predictable layout behavior, accessible interactions, and consistent UI patterns make an application easier to validate manually and easier to cover with automated tests. Building the site by hand helped me better understand the kinds of frontend details that can create usability issues, accessibility gaps, or brittle test automation when they are ignored.",
         ],
       },
       {
