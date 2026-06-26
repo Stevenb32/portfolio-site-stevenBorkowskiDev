@@ -68,22 +68,40 @@ export const projectPages = [
     title: "Portfolio Website (v2)",
 
     cards: [
-      {
-        id: "overview",
-        title: "Overview",
-        paragraphs: ["", ""],
-      },
-      {
-        id: "implementation",
-        title: "Implementation",
-        bullets: ["", "", "", "", "", ""],
-      },
-      {
-        id: "tech-stack",
-        title: "Tech Stack",
-        technologies: ["React", "Tailwind CSS", "React Router", "Vite", "JavaScript", "Responsive Design"],
-      },
-    ],
+    {
+      id: "overview",
+      title: "Overview",
+      paragraphs: [
+        "Portfolio Website (v2) is a React and Tailwind CSS rebuild of my personal portfolio site. The goal of this version was to move beyond a static HTML and CSS implementation and rebuild the site with reusable components, shared project data, client-side routing, and a structure that is easier to maintain as the content grows.",
+        "This version gives me a stronger frontend foundation for presenting QA leadership, automation, infrastructure, and software projects in one place. I used the rebuild as a way to practice how modern frontend applications are organized, how content can be driven from data, and how routing and reusable UI patterns can make a site easier to extend over time.",
+      ],
+    },
+    {
+      id: "implementation",
+      title: "Implementation",
+      paragraphs: [ "I rebuilt the portfolio as a React application using reusable components for shared layout, cards, chips, page sections, navigation, and project detail pages. Instead of hardcoding each section directly into the page markup, I started organizing the site around reusable data and component patterns so the content can be easier to update as the portfolio grows.", "I added React Router to support dedicated project detail pages while keeping the main portfolio page focused and easy to navigate. This gave each project more room for explanation without overcrowding the homepage, and it helped me practice how routed frontend applications are structured.", "I also started moving the styling direction toward Tailwind CSS so layout, spacing, and responsive behavior can be managed closer to the components. The goal was to make the site easier to maintain, easier to extend, and better structured for future content updates as I continue adding QA automation, infrastructure, and software projects.", ],
+    },
+    {
+      id: "frontend-quality",
+      title: "Frontend Quality",
+      paragraphs: [
+        "I approached this rebuild with a quality-focused mindset, not just as a visual redesign. I paid attention to component boundaries, repeated UI patterns, route behavior, responsive layouts, semantic structure, and content maintainability. These are the same kinds of details that matter when testing and supporting a real frontend application.",
+        "The project also helped me think more clearly about how a UI should be structured to support future testing. Reusable components, predictable data shapes, clear page routes, accessible markup, and consistent interaction patterns make an application easier to understand, easier to validate, and easier to expand without creating unnecessary regression risk.",
+      ],
+    },
+    {
+      id: "tech-stack",
+      title: "Tech Stack",
+      technologies: [
+        "React",
+        "Tailwind CSS",
+        "React Router",
+        "Vite",
+        "JavaScript",
+        "Responsive Design",
+      ],
+    },
+  ],
 
     links: [
       {
