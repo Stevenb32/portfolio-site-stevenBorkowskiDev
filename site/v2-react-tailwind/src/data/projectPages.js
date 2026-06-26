@@ -119,8 +119,8 @@ export const projectPages = [
         id: "overview",
         title: "Overview",
         paragraphs: [
-          "Portfolio Website (v1) was the first full version of my personal portfolio site, built with hand-written HTML and CSS before introducing JavaScript frameworks or utility-first styling. The goal was to strengthen my frontend fundamentals by building a real, public-facing site from the ground up instead of relying on templates or site builders.",
-          "This version gave me a foundation for understanding how page structure, layout, styling systems, accessibility, and responsive behavior all work together. It also became the starting point for a longer-term portfolio platform that I could later rebuild with React, Tailwind CSS, routing, reusable data, and more maintainable content workflows.",
+          "Portfolio Website (v1) was the first full version of my personal portfolio site, built with hand-written HTML and CSS before introducing JavaScript frameworks or utility-first styling. I built this version to strengthen my frontend fundamentals, create a real site to showcase my work, and get hands-on practice building something from the ground up instead of only testing software from the outside.",
+          "The project helped me understand how page structure, layout, styling systems, accessibility, and responsive behavior work together in a public-facing website.",
         ],
       },
       {
@@ -129,15 +129,8 @@ export const projectPages = [
         paragraphs: [
           "I built the site as a multi-section static portfolio using semantic HTML and custom CSS. The page included sections for the hero, about content, experience, projects, certifications, and contact information, giving me practice organizing real portfolio content into a clear page structure.",
           "On the styling side, I created reusable patterns for cards, chips, containers, dividers, and section layouts so the design stayed consistent across the site. I also organized the CSS around tokens, reset styles, base styles, layout rules, utilities, and component-specific classes, which helped me understand how maintainable CSS architecture supports long-term iteration.",
+          "I paid attention to semantic HTML, heading hierarchy, landmark regions, keyboard navigation, focus states, readable content structure, and responsive layouts so the site would be easier to use, inspect, maintain, and improve. Building the site without a framework helped me understand the underlying pieces that larger frontend tools often abstract away.",
           "This version was also deployed as part of my self-hosted web environment using Dockerized Nginx, which helped connect the frontend work to real hosting and deployment concepts instead of only running the site locally.",
-        ],
-      },
-      {
-        id: "frontend-foundation",
-        title: "Frontend Foundation",
-        paragraphs: [
-          "A major focus of this project was learning how frontend structure affects software quality. I paid attention to semantic HTML, heading hierarchy, landmark regions, keyboard navigation, focus states, readable content structure, and responsive layouts so the site would be easier to use, inspect, maintain, and improve.",
-          "This connects naturally to QA and SDET work because frontend quality is not only about visual design. Clear markup, predictable layout behavior, accessible interactions, and consistent UI patterns make an application easier to validate manually and easier to cover with automated tests. Building the site by hand helped me better understand the kinds of frontend details that can create usability issues, accessibility gaps, or brittle test automation when they are ignored.",
         ],
       },
       {
