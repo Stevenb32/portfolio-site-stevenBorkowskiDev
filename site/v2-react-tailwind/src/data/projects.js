@@ -1,11 +1,11 @@
 export const projectItems = [
   {
     id: "tasktracker",
-    categories: ["QA Automation", "Full-Stack"],
+    categories: ["QA Automation", "SDET Portfolio"],
     title: "TaskTracker",
     description:
-      "A full-stack task management app designed as a realistic QA/SDET practice project, with layered automated tests across domain logic, API behavior, UI workflows, and Dockerized environments",
-    tech: [".NET", "React", "Playwright", "xUnit", "Docker", "CI/CD"],
+      "A full-stack QA automation portfolio project built to demonstrate SDET-style testing across domain logic, REST API behavior, UI workflows, PostgreSQL data persistence, Dockerized environments, and CI test execution",
+    tech: ["C#", ".NET API", "PostgreSQL", "xUnit", "Playwright", "Docker", "GitHub Actions"],
     links: [
       {
         id: "live",
@@ -24,12 +24,28 @@ export const projectItems = [
     ],
   },
   {
+    id: "portfolio-v2",
+    categories: ["React", "Frontend"],
+    title: "Portfolio Website (v2)",
+    description:
+      "A React and Tailwind CSS rebuild of my portfolio site focused on component-based architecture, reusable project data, client-side routing, responsive design, and maintainable content updates for showcasing QA leadership and automation projects",
+    tech: ["React", "Tailwind CSS", "React Router", "Vite", "JavaScript", "Responsive Design"],
+    links: [
+      {
+        id: "details",
+        label: "Project Details →",
+        href: "/projects/portfolio-v2/",
+        type: "route",
+      },
+    ],
+  },
+  {
     id: "portfolio-v1",
-    categories: ["Web", "Infrastructure"],
+    categories: ["Frontend", "Accessibility"],
     title: "Portfolio Website (v1)",
     description:
-      "A fully hand-coded HTML/CSS portfolio built on a custom design system using tokens, layouts, utilities, and BEM components",
-    tech: ["HTML", "CSS", "Responsive Layout"],
+      "A hand-coded portfolio website built to strengthen frontend fundamentals, accessibility, responsive design, and maintainable CSS architecture while creating a professional platform for showcasing QA leadership and automation projects",
+    tech: ["HTML", "CSS", "Accessibility", "Responsive Design", "BEM", "Design Tokens"],
     links: [
       {
         id: "details",
@@ -41,11 +57,11 @@ export const projectItems = [
   },
   {
     id: "dockerized-nginx",
-    categories: ["Infrastructure", "Self-Hosting"],
-    title: "Dockerized Nginx Web Server",
+    categories: ["DevOps", "Infrastructure"],
+    title: "Containerized Web Deployment",
     description:
-      "Containerized an Nginx web server using Docker Compose to serve a self-hosted portfolio, with persistent configuration and clear separation between edge traffic (Cloudflare) and the origin server",
-    tech: ["Docker", "Docker Compose", "Reverse Proxy", "Persistent Storage"],
+      "A containerized web server project using Docker Compose and Nginx to practice production-style hosting, repeatable environment setup, persistent configuration, and deployment workflows that support safer release validation",
+    tech: ["Docker", "Docker Compose", "Nginx", "Linux", "Self-Hosting", "Deployment"],
     links: [
       {
         id: "details",
@@ -58,10 +74,10 @@ export const projectItems = [
   {
     id: "cloudflare-dns-security",
     categories: ["Infrastructure", "Security"],
-    title: "Cloudflare DNS & Security Setup",
+    title: "Cloudflare DNS & HTTPS Configuration",
     description:
-      "Configured Cloudflare DNS and HTTPS for a self-hosted portfolio, managing A/CNAME records, enabling Cloudflare proxying, and establishing a safer public entry point",
-    tech: ["DNS", "HTTPS", "SSL/TLS", "Origin Server (Self-Hosted)"],
+      "Configured Cloudflare DNS, HTTPS, proxying, and origin security for a self-hosted portfolio site, gaining hands-on experience with secure public access, domain routing, and production-style web deployment",
+    tech: ["Cloudflare", "DNS", "HTTPS", "SSL/TLS", "Proxying", "Origin Security"],
     links: [
       {
         id: "details",
@@ -74,10 +90,10 @@ export const projectItems = [
   {
     id: "raspberry-pi-home-server",
     categories: ["Infrastructure", "Home Lab"],
-    title: "Raspberry Pi Home Server",
+    title: "Self-Hosted Linux Server",
     description:
-      "Configured a Raspberry Pi 5 as a long-running home server to practice Linux administration, secure remote access, and containerized service management",
-    tech: ["Raspberry Pi 5", "Linux", "SSH", "Docker"],
+      "Built and maintained a self-hosted Linux server on a Raspberry Pi 5 to practice containerized service management, secure remote access, networking fundamentals, and long-running environment reliability",
+    tech: ["Linux", "Docker", "SSH", "Tailscale", "Networking", "Home Lab"],
     links: [
       {
         id: "details",
