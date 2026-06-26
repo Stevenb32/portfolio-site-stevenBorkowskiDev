@@ -152,45 +152,103 @@ export const projectPages = [
   {
     id: "dockerized-nginx",
     categories: ["DevOps", "Infrastructure"],
-    title: "Containerized Web Deployment",
-
+    title: "Containerized Web Infrastructure",
     cards: [
       {
         id: "overview",
         title: "Overview",
         paragraphs: [
-          "This project focuses on running a production-style Nginx web server inside a Docker container to serve a static portfolio site from a self-hosted environment. The goal was to move beyond local development servers and deploy a real, long-running web service.",
-          "Nginx is containerized using Docker Compose, with configuration and site files mounted as volumes. This allows the web server to be updated, restarted, or rebuilt without losing configuration or site content, mirroring real-world deployment patterns.",
+          "This project is the self-hosted web infrastructure layer behind my public portfolio site and related web applications. I built it to move beyond local development and practice how real public web traffic is routed, secured, containerized, and served from a long-running Linux environment.",
+          "The setup uses Cloudflare for DNS, HTTPS, and edge proxying, with Docker Compose and Nginx running on my self-hosted server. Public traffic flows through Cloudflare to an Nginx edge reverse proxy container, which then routes requests to separate backend containers that serve static sites and application services.",
+        ],
+      },
+      {
+        id: "architecture",
+        title: "Architecture",
+        paragraphs: [
+          "I separated the deployment into clear infrastructure layers instead of running everything through one basic web server. The edge Nginx container handles public routing, HTTPS configuration, domain redirects, and reverse proxy behavior, while backend containers are responsible for serving the actual site or application content.",
+          "This structure makes the environment easier to understand and extend. The portfolio site can be served from one backend container, while additional projects such as TaskTracker can be routed through their own frontend and API containers under separate subdomains.",
+        ],
+      },
+      {
+        id: "cloudflare-https",
+        title: "Cloudflare & HTTPS",
+        paragraphs: [
+          "Cloudflare acts as the public entry point for the domain. I configured DNS records, proxying, HTTPS behavior, and origin certificate usage so traffic is routed through Cloudflare before reaching my self-hosted server.",
+          "This gave me hands-on experience with domain routing, SSL/TLS concepts, edge-to-origin communication, HTTP-to-HTTPS redirects, certificate behavior, and the practical tradeoffs involved in safely exposing a home-hosted service to the internet.",
+        ],
+      },
+      {
+        id: "containerized-nginx",
+        title: "Containerized Nginx",
+        paragraphs: [
+          "Nginx is managed with Docker Compose so the web infrastructure can be defined as repeatable services instead of manually configured processes. The Compose setup defines container names, ports, restart behavior, Docker networking, mounted configuration files, mounted certificate files, and backend service boundaries.",
+          "Using mounted configuration and site files allows me to update routing rules, certificates, and static content without baking those changes directly into a custom image. This helped me practice a more maintainable deployment style where infrastructure configuration, application files, and runtime containers have clear responsibilities.",
         ],
       },
       {
         id: "highlights",
         title: "Highlights",
         bullets: [
-          "Deployed an Nginx web server as a Docker container for consistent, repeatable hosting.",
-          "Used Docker Compose to define ports, volumes, and restart behavior.",
-          "Mounted site files and Nginx configuration as persistent volumes.",
-          "Separated edge traffic handling (Cloudflare) from the origin web server.",
-          "Enabled safe iteration on site content without rebuilding the container image.",
-          "Gained hands-on experience with container lifecycle management and troubleshooting.",
+          "Configured Cloudflare DNS, HTTPS, proxying, and origin certificate behavior for a self-hosted public domain.",
+          "Built an Nginx edge reverse proxy container to handle public routing, HTTPS redirects, canonical domain redirects, and subdomain routing.",
+          "Served the portfolio site from a separate backend Nginx container instead of combining edge routing and static file serving into one service.",
+          "Used Docker Compose to define ports, volumes, restart behavior, container names, and shared Docker networking.",
+          "Mounted Nginx configuration, Cloudflare certificates, and site files into containers to keep runtime services easier to update and inspect.",
+          "Extended the same routing pattern to support additional hosted projects, including a public frontend and API for TaskTracker.",
+          "Gained hands-on troubleshooting experience with DNS behavior, TLS configuration, reverse proxy routing, Docker networking, and long-running self-hosted services.",
         ],
       },
       {
         id: "tech-stack",
         title: "Tech Stack",
-        technologies: ["Docker", "Docker Compose", "Nginx", "Linux", "Self-Hosting", "Deployment"],
+        technologies: ["Cloudflare", "DNS", "SSL/TLS", "Docker", "Docker Compose", "Nginx", "Linux", "Self-Hosting"],
       },
     ],
-
-    links: [
-      {
-        id: "home",
-        label: "← Back to projects",
-        href: "/#projects",
-        type: "anchor",
-      },
-    ],
+    links: [{ id: "home", label: "← Back to projects", href: "/#projects", type: "anchor" }],
   },
+  // {
+  //   id: "dockerized-nginx",
+  //   categories: ["DevOps", "Infrastructure"],
+  //   title: "Containerized Web Deployment",
+
+  //   cards: [
+  //     {
+  //       id: "overview",
+  //       title: "Overview",
+  //       paragraphs: [
+  //         "This project focuses on running a production-style Nginx web server inside a Docker container to serve a static portfolio site from a self-hosted environment. The goal was to move beyond local development servers and deploy a real, long-running web service.",
+  //         "Nginx is containerized using Docker Compose, with configuration and site files mounted as volumes. This allows the web server to be updated, restarted, or rebuilt without losing configuration or site content, mirroring real-world deployment patterns.",
+  //       ],
+  //     },
+  //     {
+  //       id: "highlights",
+  //       title: "Highlights",
+  //       bullets: [
+  //         "Deployed an Nginx web server as a Docker container for consistent, repeatable hosting.",
+  //         "Used Docker Compose to define ports, volumes, and restart behavior.",
+  //         "Mounted site files and Nginx configuration as persistent volumes.",
+  //         "Separated edge traffic handling (Cloudflare) from the origin web server.",
+  //         "Enabled safe iteration on site content without rebuilding the container image.",
+  //         "Gained hands-on experience with container lifecycle management and troubleshooting.",
+  //       ],
+  //     },
+  //     {
+  //       id: "tech-stack",
+  //       title: "Tech Stack",
+  //       technologies: ["Docker", "Docker Compose", "Nginx", "Linux", "Self-Hosting", "Deployment"],
+  //     },
+  //   ],
+
+  //   links: [
+  //     {
+  //       id: "home",
+  //       label: "← Back to projects",
+  //       href: "/#projects",
+  //       type: "anchor",
+  //     },
+  //   ],
+  // },
   {
     id: "cloudflare-dns-security",
     categories: ["Infrastructure", "Security"],
