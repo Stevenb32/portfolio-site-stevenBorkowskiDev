@@ -2,6 +2,7 @@ import { useParams } from "react-router-dom";
 import NotFoundPage from "./NotFoundPage";
 import SkipLink from "../components/SkipLink";
 import Container from "../components/Container";
+import Divider from "../components/Divider";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 import Card from "../components/Card";
@@ -30,6 +31,20 @@ function ProjectPage() {
             <div className="project">
               <p className="projects__meta">{project.categories.join(" · ")}</p>
               <h1 className="project__title">{project.title}</h1>
+
+              <Divider />
+
+              {project.technologies && (
+                <ul className="project__tech">
+                  {project.technologies.map((tech) => (
+                    <Chip key={tech} as="li" variant="tech">
+                      {tech}
+                    </Chip>
+                  ))}
+                </ul>
+              )} 
+
+              <Divider />
 
               <div className="project__grid">
                 {project.cards.map((card) => (

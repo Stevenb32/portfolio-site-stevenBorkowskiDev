@@ -2,6 +2,7 @@ export const projectPages = [
   {
     id: "tasktracker",
     categories: ["QA Automation", "SDET Portfolio"],
+    technologies: ["C#", ".NET", "EF Core", "PostgreSQL", "React", "Playwright", "xUnit", "Docker", "GitHub Actions"],
     title: "TaskTracker",
 
     cards: [
@@ -29,11 +30,6 @@ export const projectPages = [
           "I organized tests around user and system behavior instead of only checking implementation details. As the app grew, I split larger test files into more focused behavior-specific files, added workflow coverage for task actions, and expanded Playwright coverage for validation errors. The goal was to make the test suite easier to understand, maintain, and trust as the application changed.",
           "I also practiced CI and failure feedback by running automated checks through GitHub Actions and working with Playwright artifact upload for failed browser tests. That gave me experience with the feedback loop QA automation engineers rely on: make a change, run the right checks, inspect failures, and improve the test coverage or application behavior when gaps are found.",
         ],
-      },
-      {
-        id: "tech-stack",
-        title: "Tech Stack",
-        technologies: ["C#", ".NET", "EF Core", "PostgreSQL", "React", "Playwright", "xUnit", "Docker", "GitHub Actions"],
       },
     ],
 
@@ -66,6 +62,8 @@ export const projectPages = [
     id: "containerized-web-infrastructure",
     categories: ["DevOps", "Infrastructure"],
     title: "Containerized Web Infrastructure",
+    technologies: ["Cloudflare", "DNS", "SSL/TLS", "Docker", "Docker Compose", "Nginx", "Linux", "Self-Hosting"],
+
     cards: [
       {
         id: "overview",
@@ -84,11 +82,6 @@ export const projectPages = [
           "Working with this setup also helped me understand how DNS behavior, certificate configuration, reverse proxy rules, container names, port mappings, and Docker networks all affect whether an application is reachable and working correctly.",
         ],
       },
-      {
-        id: "tech-stack",
-        title: "Tech Stack",
-        technologies: ["Cloudflare", "DNS", "SSL/TLS", "Docker", "Docker Compose", "Nginx", "Linux", "Self-Hosting"],
-      },
     ],
     links: [{ id: "home", label: "← Back to projects", href: "/#projects", type: "anchor" }],
   },
@@ -96,6 +89,7 @@ export const projectPages = [
     id: "raspberry-pi-home-server",
     categories: ["Infrastructure", "Home Lab"],
     title: "Self-Hosted Linux Server",
+    technologies: ["Linux", "Docker", "SSH", "Tailscale", "Networking", "Home Lab"],
 
     cards: [
       {
@@ -114,11 +108,6 @@ export const projectPages = [
           "The project also helped me practice basic operational habits such as backups, updates, service restarts, troubleshooting container issues, reviewing logs, and thinking through what it takes to keep a system running reliably over time. Working with the server gave me more context for how applications depend on their environments, including containers, networking, configuration, deployment steps, and the services around the software.",
         ],
       },
-      {
-        id: "tech-stack",
-        title: "Tech Stack",
-        technologies: ["Linux", "Docker", "SSH", "Tailscale", "Networking", "Home Lab"],
-      },
     ],
 
     links: [
@@ -129,11 +118,12 @@ export const projectPages = [
         type: "anchor",
       },
     ],
-  },
+  }, 
   {
     id: "portfolio-v2",
     categories: ["React", "Frontend"],
     title: "Portfolio Website (v2)",
+    technologies: ["React", "Tailwind CSS", "React Router", "Vite", "JavaScript", "Responsive Design"],
 
     cards: [
       {
@@ -161,11 +151,6 @@ export const projectPages = [
           "The project also helped me think more clearly about how a UI should be structured to support future testing. Reusable components, predictable data shapes, clear page routes, accessible markup, and consistent interaction patterns make an application easier to understand, easier to validate, and easier to expand without creating unnecessary regression risk.",
         ],
       },
-      {
-        id: "tech-stack",
-        title: "Tech Stack",
-        technologies: ["React", "Tailwind CSS", "React Router", "Vite", "JavaScript", "Responsive Design"],
-      },
     ],
 
     links: [
@@ -181,6 +166,7 @@ export const projectPages = [
     id: "portfolio-v1",
     categories: ["Frontend", "Accessibility"],
     title: "Portfolio Website (v1)",
+    technologies: ["HTML", "CSS", "Accessibility", "Responsive Design", "BEM", "Design Tokens"],
 
     cards: [
       {
@@ -200,11 +186,6 @@ export const projectPages = [
           "I paid attention to semantic HTML, heading hierarchy, landmark regions, keyboard navigation, focus states, readable content structure, and responsive layouts so the site would be easier to use, inspect, maintain, and improve. Building the site without a framework helped me understand the underlying pieces that larger frontend tools often abstract away.",
           "This version was also deployed as part of my self-hosted web environment using Dockerized Nginx, which helped connect the frontend work to real hosting and deployment concepts instead of only running the site locally.",
         ],
-      },
-      {
-        id: "tech-stack",
-        title: "Tech Stack",
-        technologies: ["HTML", "CSS", "Accessibility", "Responsive Design", "BEM", "Design Tokens"],
       },
     ],
 
