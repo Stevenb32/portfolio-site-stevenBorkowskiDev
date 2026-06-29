@@ -62,6 +62,74 @@ export const projectPages = [
       },
     ],
   },
+{
+    id: "containerized-web-infrastructure",
+    categories: ["DevOps", "Infrastructure"],
+    title: "Containerized Web Infrastructure",
+    cards: [
+      {
+        id: "overview",
+        title: "Overview",
+        paragraphs: [
+          "This project is the self-hosted web infrastructure layer behind my public portfolio site and related web applications. I built it to move beyond local development and get hands-on experience with how public web traffic is routed, secured, containerized, and served from a long-running Linux environment.",
+          "The setup brings together Cloudflare, Docker Compose, and Nginx so the site is available through a real domain with HTTPS, reverse proxy routing, and containerized services. It helped me connect frontend project work to the deployment and infrastructure concepts that support real applications.",
+        ],
+      },
+      {
+        id: "architecture",
+        title: "Architecture",
+        paragraphs: [
+          "The deployment is split into clear layers. Cloudflare handles the public DNS and HTTPS entry point for the domain, while an Nginx edge container receives traffic on the server and routes requests to the correct backend container. The portfolio site is served from a separate Nginx container, and other applications can be routed through their own frontend or API containers under separate subdomains.",
+          "This separation keeps the responsibilities easier to reason about. Cloudflare handles the public edge layer, the Nginx edge container handles reverse proxy routing and domain behavior, and the backend containers focus on serving the actual site or application content. That structure gives me a more realistic environment for making deployment changes, updating routing rules, and troubleshooting issues across the stack.",
+          "Working with this setup also helped me understand how DNS behavior, certificate configuration, reverse proxy rules, container names, port mappings, and Docker networks all affect whether an application is reachable and working correctly.",
+        ],
+      },
+      {
+        id: "tech-stack",
+        title: "Tech Stack",
+        technologies: ["Cloudflare", "DNS", "SSL/TLS", "Docker", "Docker Compose", "Nginx", "Linux", "Self-Hosting"],
+      },
+    ],
+    links: [{ id: "home", label: "← Back to projects", href: "/#projects", type: "anchor" }],
+  },
+  {
+    id: "raspberry-pi-home-server",
+    categories: ["Infrastructure", "Home Lab"],
+    title: "Self-Hosted Linux Server",
+
+    cards: [
+      {
+        id: "overview",
+        title: "Overview",
+        paragraphs: [
+          "This project centers on configuring a Raspberry Pi 5 as a long-running Linux home server to learn infrastructure concepts beyond local development environments. I built it as a practical home lab for managing real services on real hardware while developing a stronger understanding of Linux, Docker, networking, web servers, self-hosting, and deployment workflows.",
+          "The server gives me a controlled environment for experimenting with the kinds of systems that support modern software delivery. Instead of only building and testing applications locally, I can deploy services, expose applications through web infrastructure, manage remote access, troubleshoot configuration issues, and observe how long-running systems behave over time.",
+        ],
+      },
+      {
+        id: "operations-reliability",
+        title: "Operations & Reliability",
+        paragraphs: [
+          "I manage the Pi as a headless Linux server using SSH and Tailscale for secure remote administration. This gives me practice working with servers through the terminal, managing services without a desktop environment, and connecting to my infrastructure from outside my local network without exposing unnecessary access directly to the public internet.",
+          "The project also helped me practice basic operational habits such as backups, updates, service restarts, troubleshooting container issues, reviewing logs, and thinking through what it takes to keep a system running reliably over time. Working with the server gave me more context for how applications depend on their environments, including containers, networking, configuration, deployment steps, and the services around the software.",
+        ],
+      },
+      {
+        id: "tech-stack",
+        title: "Tech Stack",
+        technologies: ["Linux", "Docker", "SSH", "Tailscale", "Networking", "Home Lab"],
+      },
+    ],
+
+    links: [
+      {
+        id: "home",
+        label: "← Back to projects",
+        href: "/#projects",
+        type: "anchor",
+      },
+    ],
+  },
   {
     id: "portfolio-v2",
     categories: ["React", "Frontend"],
@@ -149,72 +217,5 @@ export const projectPages = [
       },
     ],
   },
-  {
-    id: "containerized-web-infrastructure",
-    categories: ["DevOps", "Infrastructure"],
-    title: "Containerized Web Infrastructure",
-    cards: [
-      {
-        id: "overview",
-        title: "Overview",
-        paragraphs: [
-          "This project is the self-hosted web infrastructure layer behind my public portfolio site and related web applications. I built it to move beyond local development and get hands-on experience with how public web traffic is routed, secured, containerized, and served from a long-running Linux environment.",
-          "The setup brings together Cloudflare, Docker Compose, and Nginx so the site is available through a real domain with HTTPS, reverse proxy routing, and containerized services. It helped me connect frontend project work to the deployment and infrastructure concepts that support real applications.",
-        ],
-      },
-      {
-        id: "architecture",
-        title: "Architecture",
-        paragraphs: [
-          "The deployment is split into clear layers. Cloudflare handles the public DNS and HTTPS entry point for the domain, while an Nginx edge container receives traffic on the server and routes requests to the correct backend container. The portfolio site is served from a separate Nginx container, and other applications can be routed through their own frontend or API containers under separate subdomains.",
-          "This separation keeps the responsibilities easier to reason about. Cloudflare handles the public edge layer, the Nginx edge container handles reverse proxy routing and domain behavior, and the backend containers focus on serving the actual site or application content. That structure gives me a more realistic environment for making deployment changes, updating routing rules, and troubleshooting issues across the stack.",
-          "Working with this setup also helped me understand how DNS behavior, certificate configuration, reverse proxy rules, container names, port mappings, and Docker networks all affect whether an application is reachable and working correctly.",
-        ],
-      },
-      {
-        id: "tech-stack",
-        title: "Tech Stack",
-        technologies: ["Cloudflare", "DNS", "SSL/TLS", "Docker", "Docker Compose", "Nginx", "Linux", "Self-Hosting"],
-      },
-    ],
-    links: [{ id: "home", label: "← Back to projects", href: "/#projects", type: "anchor" }],
-  },
-  {
-    id: "raspberry-pi-home-server",
-    categories: ["Infrastructure", "Home Lab"],
-    title: "Self-Hosted Linux Server",
-
-    cards: [
-      {
-        id: "overview",
-        title: "Overview",
-        paragraphs: [
-          "This project centers on configuring a Raspberry Pi 5 as a long-running Linux home server to learn infrastructure concepts beyond local development environments. I built it as a practical home lab for managing real services on real hardware while developing a stronger understanding of Linux, Docker, networking, web servers, self-hosting, and deployment workflows.",
-          "The server gives me a controlled environment for experimenting with the kinds of systems that support modern software delivery. Instead of only building and testing applications locally, I can deploy services, expose applications through web infrastructure, manage remote access, troubleshoot configuration issues, and observe how long-running systems behave over time.",
-        ],
-      },
-      {
-        id: "operations-reliability",
-        title: "Operations & Reliability",
-        paragraphs: [
-          "I manage the Pi as a headless Linux server using SSH and Tailscale for secure remote administration. This gives me practice working with servers through the terminal, managing services without a desktop environment, and connecting to my infrastructure from outside my local network without exposing unnecessary access directly to the public internet.",
-          "The project also helped me practice basic operational habits such as backups, updates, service restarts, troubleshooting container issues, reviewing logs, and thinking through what it takes to keep a system running reliably over time. Working with the server gave me more context for how applications depend on their environments, including containers, networking, configuration, deployment steps, and the services around the software.",
-        ],
-      },
-      {
-        id: "tech-stack",
-        title: "Tech Stack",
-        technologies: ["Linux", "Docker", "SSH", "Tailscale", "Networking", "Home Lab"],
-      },
-    ],
-
-    links: [
-      {
-        id: "home",
-        label: "← Back to projects",
-        href: "/#projects",
-        type: "anchor",
-      },
-    ],
-  },
+  
 ];

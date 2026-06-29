@@ -24,43 +24,11 @@ export const projectItems = [
     ],
   },
   {
-    id: "portfolio-v2",
-    categories: ["React", "Frontend"],
-    title: "Portfolio Website (v2)",
-    description:
-      "React and Tailwind CSS rebuild of my portfolio site focused on component-based architecture, reusable project data, client-side routing, responsive design, and maintainable content updates for showcasing QA leadership and automation projects",
-    tech: ["React", "Tailwind CSS", "React Router", "Vite", "JavaScript", "Responsive Design"],
-    links: [
-      {
-        id: "details",
-        label: "Project Details →",
-        href: "/projects/portfolio-v2/",
-        type: "route",
-      },
-    ],
-  },
-  {
-    id: "portfolio-v1",
-    categories: ["Frontend", "Accessibility"],
-    title: "Portfolio Website (v1)",
-    description:
-      "Hand-coded portfolio website built to strengthen frontend fundamentals, accessibility, responsive design, and maintainable CSS architecture while creating a professional platform for showcasing QA leadership and automation projects",
-    tech: ["HTML", "CSS", "Accessibility", "Responsive Design", "BEM", "Design Tokens"],
-    links: [
-      {
-        id: "details",
-        label: "Project Details →",
-        href: "/projects/portfolio-v1/",
-        type: "route",
-      },
-    ],
-  },
-  {
     id: "containerized-web-infrastructure",
     categories: ["DevOps", "Infrastructure"],
     title: "Containerized Web Infrastructure",
     description:
-      "Self-hosted web infrastructure project using Cloudflare, Docker Compose, and Nginx to route HTTPS traffic through an edge reverse proxy and serve public web applications from separate backend containers.",
+      "Self-hosted web infrastructure using Cloudflare, Docker Compose, and Nginx to route HTTPS traffic through an edge reverse proxy, isolate services in containers, and support public deployment of portfolio and application projects.",
     tech: ["Cloudflare", "Docker", "Docker Compose", "Nginx", "SSL/TLS", "Linux", "Self-Hosting"],
     links: [{ id: "details", label: "Project Details →", href: "/projects/containerized-web-infrastructure/", type: "route" }],
   },
@@ -76,6 +44,38 @@ export const projectItems = [
         id: "details",
         label: "Project Details →",
         href: "/projects/raspberry-pi-home-server/",
+        type: "route",
+      },
+    ],
+  },
+  {
+    id: "portfolio-v2",
+    categories: ["React", "Frontend"],
+    title: "Portfolio Website (v2)",
+    description:
+      "React and Tailwind CSS portfolio rebuild structured around reusable components, shared project data, client-side routing, responsive layouts, and maintainable content patterns for presenting QA leadership, automation, and infrastructure work",
+    tech: ["React", "Tailwind CSS", "React Router", "Vite", "JavaScript", "Responsive Design"],
+    links: [
+      {
+        id: "details",
+        label: "Project Details →",
+        href: "/projects/portfolio-v2/",
+        type: "route",
+      },
+    ],
+  },
+  {
+    id: "portfolio-v1",
+    categories: ["Frontend", "Accessibility"],
+    title: "Portfolio Website (v1)",
+    description:
+      "Hand-coded HTML and CSS portfolio site demonstrating semantic page structure, accessibility fundamentals, responsive design, reusable CSS patterns, and maintainable frontend architecture",
+    tech: ["HTML", "CSS", "Accessibility", "Responsive Design", "BEM", "Design Tokens"],
+    links: [
+      {
+        id: "details",
+        label: "Project Details →",
+        href: "/projects/portfolio-v1/",
         type: "route",
       },
     ],
