@@ -64,31 +64,6 @@ export const projectItems = [
     tech: ["Cloudflare", "Docker", "Docker Compose", "Nginx", "SSL/TLS", "Linux", "Self-Hosting"],
     links: [{ id: "details", label: "Project Details →", href: "/projects/dockerized-nginx/", type: "route" }],
   },
-  // {
-  //   id: "dockerized-nginx",
-  //   categories: ["DevOps", "Infrastructure"],
-  //   title: "Containerized Web Infrastructure",
-  //   description:
-  //     "A Docker-based Nginx deployment layer for my public portfolio site, using an edge reverse proxy, HTTPS routing, Cloudflare origin certificates, and separate backend containers for serving static web content.",
-  //   tech: ["Docker", "Docker Compose", "Nginx", "Linux", "Cloudflare", "Self-Hosting"],
-  //   links: [{ id: "details", label: "Project Details →", href: "/projects/dockerized-nginx/", type: "route" }],
-  // },
-  // {
-  //   id: "cloudflare-dns-security",
-  //   categories: ["Infrastructure", "Security"],
-  //   title: "Cloudflare DNS & HTTPS Configuration",
-  //   description:
-  //     "Configured Cloudflare DNS, HTTPS, proxying, and origin security for a self-hosted portfolio site, gaining hands-on experience with secure public access, domain routing, and production-style web deployment",
-  //   tech: ["Cloudflare", "DNS", "HTTPS", "SSL/TLS", "Proxying", "Origin Security"],
-  //   links: [
-  //     {
-  //       id: "details",
-  //       label: "Project Details →",
-  //       href: "/projects/cloudflare-dns-security/",
-  //       type: "route",
-  //     },
-  //   ],
-  // },
   {
     id: "raspberry-pi-home-server",
     categories: ["Infrastructure", "Home Lab"],
