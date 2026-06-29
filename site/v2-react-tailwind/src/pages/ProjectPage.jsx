@@ -30,7 +30,6 @@ function ProjectPage() {
             <div className="project">
               <p className="projects__meta">{project.categories.join(" · ")}</p>
               <h1 className="project__title">{project.title}</h1>
-              <p className="project__summary">{project.summary}</p>
 
               <div className="project__grid">
                 {project.cards.map((card) => (

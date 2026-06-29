@@ -150,7 +150,7 @@ export const projectPages = [
     ],
   },
   {
-    id: "dockerized-nginx",
+    id: "containerized-web-infrastructure",
     categories: ["DevOps", "Infrastructure"],
     title: "Containerized Web Infrastructure",
     cards: [
@@ -180,47 +180,6 @@ export const projectPages = [
     links: [{ id: "home", label: "← Back to projects", href: "/#projects", type: "anchor" }],
   },
   {
-    id: "cloudflare-dns-security",
-    categories: ["Infrastructure", "Security"],
-    title: "Cloudflare DNS & HTTPS Configuration",
-
-    cards: [
-      {
-        id: "overview",
-        title: "Overview",
-        paragraphs: [
-          "This project focuses on establishing a secure and reliable public entry point for a self-hosted website using Cloudflare as the DNS provider and edge security layer. The goal was to safely expose a home-hosted service to the internet while reducing direct attack surface on the origin server.",
-          "The setup includes domain configuration, DNS record management, HTTPS enforcement, and Cloudflare proxying to route traffic through Cloudflare’s network before reaching the origin. This provides foundational experience with real-world web infrastructure patterns used to protect production systems.",
-        ],
-      },
-      {
-        id: "highlights",
-        title: "Highlights",
-        bullets: [
-          "Configured Cloudflare as authoritative DNS for a custom domain.",
-          "Managed A and CNAME records to route traffic to a self-hosted origin server.",
-          "Enabled Cloudflare proxying to mask the origin IP and reduce exposure.",
-          "Enforced HTTPS using Cloudflare SSL/TLS with a secure edge-to-origin configuration.",
-          "Used Cloudflare as a protective layer in front of a Dockerized Nginx web server.",
-          "Gained hands-on experience with real DNS propagation, caching, and certificate behavior.",
-        ],
-      },
-      {
-        id: "tech-stack",
-        title: "Tech Stack",
-        technologies: ["Cloudflare", "DNS", "HTTPS", "SSL/TLS", "Proxying", "Origin Security"],
-      },
-    ],
-    links: [
-      {
-        id: "home",
-        label: "← Back to projects",
-        href: "/#projects",
-        type: "anchor",
-      },
-    ],
-  },
-  {
     id: "raspberry-pi-home-server",
     categories: ["Infrastructure", "Home Lab"],
     title: "Self-Hosted Linux Server",
@@ -239,7 +198,7 @@ export const projectPages = [
         title: "Operations & Reliability",
         paragraphs: [
           "I manage the Pi as a headless Linux server using SSH and Tailscale for secure remote administration. This gives me practice working with servers through the terminal, managing services without a desktop environment, and connecting to my infrastructure from outside my local network without exposing unnecessary access directly to the public internet.",
-          "The project also helped me practice basic operational habits such as backups, updates, service restarts, troubleshooting container issues, and thinking through what it takes to keep a system running reliably over time. This connects directly to my QA automation and SDET goals because test environments, CI/CD workflows, Dockerized applications, logs, networking, and deployment issues all depend on understanding the infrastructure around the software.",
+          "The project also helped me practice basic operational habits such as backups, updates, service restarts, troubleshooting container issues, reviewing logs, and thinking through what it takes to keep a system running reliably over time. Working with the server gave me more context for how applications depend on their environments, including containers, networking, configuration, deployment steps, and the services around the software.",
         ],
       },
       {

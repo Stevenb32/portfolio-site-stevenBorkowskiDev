@@ -56,13 +56,13 @@ export const projectItems = [
     ],
   },
   {
-    id: "dockerized-nginx",
+    id: "containerized-web-infrastructure",
     categories: ["DevOps", "Infrastructure"],
     title: "Containerized Web Infrastructure",
     description:
       "Self-hosted web infrastructure project using Cloudflare, Docker Compose, and Nginx to route HTTPS traffic through an edge reverse proxy and serve public web applications from separate backend containers.",
     tech: ["Cloudflare", "Docker", "Docker Compose", "Nginx", "SSL/TLS", "Linux", "Self-Hosting"],
-    links: [{ id: "details", label: "Project Details →", href: "/projects/dockerized-nginx/", type: "route" }],
+    links: [{ id: "details", label: "Project Details →", href: "/projects/containerized-web-infrastructure/", type: "route" }],
   },
   {
     id: "raspberry-pi-home-server",
