@@ -8,12 +8,12 @@
   scroll-margin-top: 0;
 }
 
-.page {
+/* .page {
   display: flex;
   flex-direction: column;
 
   min-height: 100vh;
-}
+} */
 
 .page__header {
   position: sticky;
@@ -30,11 +30,11 @@
   box-shadow: 0 1px 12px var(--color-primary-strong);
 }
 
-.page__main {
+/* .page__main {
   flex-grow: 1;
   flex-shrink: 0;
   flex-basis: auto;
-}
+} */
 
 .page__footer {
   flex-shrink: 0;
@@ -43,9 +43,9 @@
 }
 
 /* Sections Layout - Full Width ------------------------------------------------ */
-.section {
+/* .section {
   padding-block: var(--space-80);
-}
+} */
 
 .section-header {
   display: flex;
@@ -94,12 +94,12 @@
 } */
 
 /* Containers - Centering & Limit Width ------------------------- */
-.container {
+/* .container {
   width: 100%;
   max-width: var(--container-max-width);
   padding-inline: var(--space-16);
   margin-inline: auto;
-}
+} */
 
 /* Layout Media Queries ------------------------------------------------ */
 

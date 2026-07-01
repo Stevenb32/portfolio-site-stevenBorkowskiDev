@@ -4,7 +4,7 @@ function PageSection({ children, id, className = "", ariaLabelledBy }) {
   return (
     <section
       id={id}
-      className={`section ${className}`}
+      className={`py-20 sm:py-24 lg:py-32 ${className}`}
       aria-labelledby={ariaLabelledBy}
     >
       <Container>{children}</Container>

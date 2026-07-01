@@ -3,7 +3,7 @@ import Nav from "./Nav";
 
 function Header() {
   return (
-    <header className="page__header">
+    <header className="sticky top-0 z-50 border-b border-white/10 bg-black/80 backdrop-blur">
       <Container>
         <Nav />
       </Container>

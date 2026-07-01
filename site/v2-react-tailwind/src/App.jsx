@@ -6,14 +6,14 @@ import NotFoundPage from "./pages/NotFoundPage";
 
 function App() {
   return (
-    <>
+    <div className="min-h-screen">
       <ScrollToLocation />
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/projects/:projectId" element={<ProjectPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Routes>
-    </>
+    </div>
   );
 }
 
