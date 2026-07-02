@@ -7,17 +7,17 @@ import { projectItems } from "../data/projects";
 
 function Projects() {
   return (
-    <PageSection id="projects" className="section-projects" ariaLabelledBy="projects-heading">
-      <div className="projects">
-        <div className="projects__header">
-          <h2 className="projects__title" id="projects-heading">
+    <PageSection id="projects" ariaLabelledBy="projects-heading" variant="gray">
+      <div className="flex flex-col gap-8">
+        <div>
+          <h2 id="projects-heading" className="text-center text-5xl font-bold">
             Projects
           </h2>
         </div>
 
         <div className="projects__grid">
           {projectItems.map((project) => (
-            <Card key={project.id} as="article" className="projects__card">
+            <Card key={project.id} as="article" className="projects__card bg-black">
               <p className="projects__meta">{project.categories.join(" · ")}</p>
 
               <Divider />

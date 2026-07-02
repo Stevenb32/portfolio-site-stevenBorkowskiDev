@@ -8,7 +8,7 @@ function Contact() {
   return (
     <PageSection id="contact" className="section-contact" ariaLabelledBy="contact-heading">
       <div className="contact">
-        <Card as="div" className="contact__panel">
+        <Card as="div" className="contact__panel bg-neutral-900">
           <div className="contact__header">
             <h2 id="contact-heading" className="contact__title">
               Let’s Connect

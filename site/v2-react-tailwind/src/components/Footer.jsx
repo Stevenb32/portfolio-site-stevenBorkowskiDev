@@ -6,7 +6,7 @@ import { footerLinks } from "../data/navigation";
 
 function Footer() {
   return (
-    <footer className="page__footer footer">
+    <footer className="page__footer footer bg-neutral-900">
       <Container>
         <div className="footer__inner">
           <div className="footer__brand">

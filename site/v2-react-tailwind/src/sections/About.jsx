@@ -4,7 +4,7 @@ import { certificationItems } from "../data/certifications";
 
 function About() {
   return (
-    <PageSection id="about" className="" ariaLabelledBy="about-heading" variant="gray">
+    <PageSection id="about" ariaLabelledBy="about-heading" variant="gray">
       <div className="flex flex-col gap-8">
         <div className="flex flex-col gap-4">
           <h2 id="about-heading" className="text-5xl  font-bold">
