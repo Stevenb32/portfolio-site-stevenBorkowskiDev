@@ -3,7 +3,7 @@
 /* Muscles & Skin - what things look like */
 
 /* General Components  ----------------------------------------------------------- */
-.skip-link {
+/* .skip-link {
   position: absolute;
   left: var(--space-8);
   top: var(--space-8);
@@ -19,12 +19,12 @@
   transform: translateY(-200%);
   transition: transform var(--duration-fast) var(--ease-smooth);
   z-index: calc(var(--z-nav) + 1);
-}
+} */
 
-.skip-link:focus,
+/* .skip-link:focus,
 .skip-link:focus-visible {
   transform: translateY(var(--space-8));
-}
+} */
 
 .card {
   outline: 1px solid transparent;
@@ -68,13 +68,13 @@
 }
 
 /* Nav ----------------------------------------------------------- */
-.nav__list {
+/* .nav__list {
   display: flex;
   justify-content: center;
   gap: var(--space-16);
-}
+} */
 
-.nav__link {
+/* .nav__link {
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -84,20 +84,20 @@
 
   font-weight: var(--fw-medium);
   color: var(--color-text);
-}
+} */
 
-.nav__link:hover,
+/* .nav__link:hover,
 .nav__link:focus-visible {
   color: var(--color-primary);
-}
+} */
 
 /* Hero ----------------------------------------------------------- */
-.hero {
+/* .hero {
   max-width: 70ch;
   margin-inline: auto;
-}
+} */
 
-.hero__eyebrow {
+/* .hero__eyebrow {
   font-size: var(--font-size-20);
   color: var(--color-text-muted);
 
@@ -115,26 +115,26 @@
 .hero__text {
   font-size: var(--font-size-18);
   color: var(--color-text-muted);
-}
+} */
 
 /* About ----------------------------------------------------------- */
-.about {
+/* .about {
   display: flex;
   flex-direction: column;
   gap: var(--space-32);
   padding-inline: var(--space-24);
-}
+} */
 
-.about__header {
+/* .about__header {
   display: flex;
   flex-direction: column;
   gap: var(--space-16);
-}
+} */
 
-.about__intro {
+/* .about__intro {
   max-width: 70ch;
   color: var(--color-text-muted);
-}
+} */
 
 .about__group {
   display: flex;
@@ -509,8 +509,8 @@
   gap: var(--space-16);
 }
 
-.project__title {
-}
+/* .project__title {
+} */
 
 .project__summary {
   max-width: 70ch;

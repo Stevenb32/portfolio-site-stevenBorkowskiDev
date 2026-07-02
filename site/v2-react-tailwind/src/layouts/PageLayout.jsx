@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 
 function PageLayout({ children }) {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="debug-outline flex min-h-screen flex-col">
       <SkipLink />
       <Header />
 

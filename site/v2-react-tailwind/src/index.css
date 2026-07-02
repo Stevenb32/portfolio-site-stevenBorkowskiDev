@@ -1,12 +1,23 @@
 @import "tailwindcss";
 
+@import "tailwindcss";
 
 @import "tailwindcss";
+
+@layer utilities {
+  .debug-outline,
+  .debug-outline * {
+    /* outline: 1px solid red; */
+  }
+}
+
+@theme {
+  --font-sans: Inter, system-ui, sans-serif;
+}
 
 @layer base {
   html {
     scroll-behavior: smooth;
-    
   }
 
   body {

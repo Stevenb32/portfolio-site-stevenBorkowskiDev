@@ -1,12 +1,13 @@
 import Container from "./Container";
 
-function PageSection({ children, id, className = "", ariaLabelledBy }) {
+const sectionVariants = {
+  dark: "bg-black",
+  gray: "bg-neutral-900",
+};
+
+function PageSection({ children, id, className = "", ariaLabelledBy, variant = "dark"}) {
   return (
-    <section
-      id={id}
-      className={`py-20 sm:py-24 lg:py-32 ${className}`}
-      aria-labelledby={ariaLabelledBy}
-    >
+    <section id={id} className={`py-20 ${sectionVariants[variant]} ${className}`} aria-labelledby={ariaLabelledBy}>
       <Container>{children}</Container>
     </section>
   );
