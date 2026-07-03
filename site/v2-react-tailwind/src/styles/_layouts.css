@@ -36,11 +36,11 @@
   flex-basis: auto;
 } */
 
-.page__footer {
+/* .page__footer {
   flex-shrink: 0;
   padding-block: var(--space-16);
   background-color: var(--color-gray-9);
-}
+} */
 
 /* Sections Layout - Full Width ------------------------------------------------ */
 /* .section {

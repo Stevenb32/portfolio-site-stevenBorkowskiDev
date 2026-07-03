@@ -1,9 +1,5 @@
 @import "tailwindcss";
 
-@import "tailwindcss";
-
-@import "tailwindcss";
-
 @layer utilities {
   .debug-outline,
   .debug-outline * {
@@ -22,5 +18,9 @@
 
   body {
     @apply bg-black text-neutral-100 antialiased;
+  }
+
+   #home {
+    scroll-margin-top: 0;
   }
 }

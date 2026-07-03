@@ -47,7 +47,7 @@ function Experience() {
 
                 <ul className="flex flex-col gap-3 text-sm leading-relaxed text-neutral-400">
                   {experience.points.map((point) => (
-                    <li key={point} className="experience__point">
+                    <li key={point} className="leading-5">
                       {point}
                     </li>
                   ))}

@@ -6,30 +6,49 @@ import { primaryContactLink, contactLinks } from "../data/contactLinks";
 
 function Contact() {
   return (
-    <PageSection id="contact" className="section-contact" ariaLabelledBy="contact-heading">
-      <div className="contact">
-        <Card as="div" className="contact__panel bg-neutral-900">
-          <div className="contact__header">
-            <h2 id="contact-heading" className="contact__title">
+    <PageSection id="contact" ariaLabelledBy="contact-heading">
+      <div className="flex justify-center">
+        <Card as="div" className="flex w-full max-w-3xl flex-col gap-6 bg-neutral-900 text-center">
+          <div className="flex flex-col gap-3">
+            <h2 id="contact-heading" className="text-center text-5xl font-bold">
               Let’s Connect
             </h2>
 
             <Divider />
 
-            <p className="contact__text">
+            <p className="mx-auto max-w-[62ch] leading-7 text-neutral-400">
               Interested in QA leadership, testing strategy, or building reliable systems? I’m always open to meaningful conversations and
               new opportunities.
             </p>
 
-            <p className="contact__meta">Based in Tampa Bay · Open to remote roles</p>
+            <p className="text-sm text-neutral-400">Based in Tampa Bay · Open to remote roles</p>
           </div>
 
-          <div className="contact__actions">
-            <AppLink link={primaryContactLink} className="contact__primary" />
+          <div className="flex flex-col items-center gap-6">
+            <AppLink
+              link={primaryContactLink}
+              className="
+                inline-flex items-center justify-center
+                rounded-full bg-red-700
+                px-8 py-3
+                font-medium text-neutral-100
+                transition duration-300 ease-out
+                hover:-translate-y-0.5 hover:bg-red-600
+                focus-visible:-translate-y-0.5 focus-visible:bg-red-600"
+            />
 
-            <div className="contact__secondary">
+            <div className="flex flex-wrap justify-center gap-4">
               {contactLinks.map((link) => (
-                <AppLink key={link.id} link={link} className="contact__secondary-link">
+                <AppLink
+                  key={link.id}
+                  link={link}
+                  className="
+                    inline-flex min-h-11 items-center justify-center
+                    px-4 text-neutral-100
+                    transition duration-300 ease-out
+                    hover:-translate-y-0.5 hover:text-red-400
+                    focus-visible:-translate-y-0.5 focus-visible:text-red-400"
+                >
                   <ion-icon name={link.iconName} size={link.size}></ion-icon>
                 </AppLink>
               ))}

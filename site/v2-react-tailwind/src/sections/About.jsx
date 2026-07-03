@@ -1,4 +1,5 @@
 import PageSection from "../components/PageSection";
+import Divider from "../components/Divider";
 import { educationItems } from "../data/education";
 import { certificationItems } from "../data/certifications";
 
@@ -10,6 +11,9 @@ function About() {
           <h2 id="about-heading" className="text-5xl  font-bold">
             About Me
           </h2>
+
+          <Divider />
+
           <p className="max-w-[70ch] text-neutral-400">
             I’ve always been curious about the systems people build and rely on every day — software, hardware, networks, infrastructure,
             and the layers of technology that make modern tools feel seamless.

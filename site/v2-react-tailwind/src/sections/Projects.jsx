@@ -13,21 +13,24 @@ function Projects() {
           <h2 id="projects-heading" className="text-center text-5xl font-bold">
             Projects
           </h2>
-        </div>
+        </div>  
 
-        <div className="projects__grid">
+        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {projectItems.map((project) => (
-            <Card key={project.id} as="article" className="projects__card bg-black">
-              <p className="projects__meta">{project.categories.join(" · ")}</p>
+            <Card key={project.id} as="article" className="flex flex-col gap-3 bg-black">
+              <p className="text-xs uppercase tracking-widest text-red-400">{project.categories.join(" · ")}</p>
 
               <Divider />
 
-              <h3 className="projects__card-title">{project.title}</h3>
-              <p className="projects__card-text">{project.description}</p>
+              <h3 className="text-3xl font-bold text-neutral-100">{project.title}</h3>
 
               <Divider />
 
-              <ul className="projects__tech">
+              <p className="leading-5.5 text-neutral-400">{project.description}</p>
+
+              <Divider />
+
+              <ul className="flex flex-wrap gap-2">
                 {project.tech.map((item) => (
                   <Chip key={item} as="li" variant="tech">
                     {item}
@@ -37,11 +40,13 @@ function Projects() {
 
               <Divider />
 
-              <div className="projects__actions">
+              <div className="flex flex-col gap-4">
                 {project.links.map((link) => (
-                  <AppLink key={link.id} link={link} className="projects__link" />
+                  <AppLink key={link.id} link={link} className="font-medium text-red-400 hover:text-red-500 focus-visible:text-red-500" />
                 ))}
               </div>
+
+              <Divider />
             </Card>
           ))}
         </div>
