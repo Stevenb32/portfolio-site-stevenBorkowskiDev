@@ -5,7 +5,7 @@ const sectionVariants = {
   gray: "bg-neutral-900",
 };
 
-function PageSection({ children, id, className = "", ariaLabelledBy, variant = "dark"}) {
+function PageSection({ children, id, className = "", ariaLabelledBy, variant = "dark" }) {
   return (
     <section id={id} className={`py-20 ${sectionVariants[variant]} ${className}`} aria-labelledby={ariaLabelledBy}>
       <Container>{children}</Container>

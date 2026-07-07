@@ -13,7 +13,7 @@ function Projects() {
           <h2 id="projects-heading" className="text-center text-5xl font-bold">
             Projects
           </h2>
-        </div>  
+        </div>
 
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {projectItems.map((project) => (

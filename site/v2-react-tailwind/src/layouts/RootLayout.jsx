@@ -1,16 +1,16 @@
+import { Outlet } from "react-router-dom";
 import SkipLink from "../components/SkipLink";
 import Header from "../components/Header";
 import Footer from "../components/Footer";
 
-
-function PageLayout({ children }) {
+function RootLayout() {
   return (
     <div className="debug-outline flex min-h-screen flex-col">
       <SkipLink />
       <Header />
 
       <main id="main" className="grow shrink-0 basis-auto">
-        {children}
+        <Outlet></Outlet>
       </main>
 
       <Footer />
@@ -18,4 +18,4 @@ function PageLayout({ children }) {
   );
 }
 
-export default PageLayout;
+export default RootLayout;

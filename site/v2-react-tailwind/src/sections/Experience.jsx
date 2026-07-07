@@ -15,11 +15,7 @@ function Experience() {
 
         <div className="flex flex-col gap-6">
           {experienceItems.map((experience) => (
-            <Card
-              key={experience.id}
-              as="article"
-              className="grid gap-6 md:grid-cols-[12rem_1fr] md:gap-8 bg-neutral-900"
-            >
+            <Card key={experience.id} as="article" className="grid gap-6 md:grid-cols-[12rem_1fr] md:gap-8 bg-neutral-900">
               <div className="whitespace-nowrap">
                 <Chip as="p" variant="date">
                   {experience.date}

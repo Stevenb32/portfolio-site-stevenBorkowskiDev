@@ -1,15 +1,7 @@
 import { Link } from "react-router-dom";
 
 function AppLink({ link, className, children }) {
-  const {
-  label,
-  href,
-  type = "external",
-  ariaLabel,
-  target,
-  rel,
-  download,
-} = link;
+  const { label, href, type = "external", ariaLabel, target, rel, download } = link;
 
   const content = children ?? label;
 
@@ -22,14 +14,7 @@ function AppLink({ link, className, children }) {
   }
 
   return (
-    <a
-      className={className}
-      href={href}
-      aria-label={ariaLabel}
-      target={target}
-      rel={rel}
-      download={download}
-    >
+    <a className={className} href={href} aria-label={ariaLabel} target={target} rel={rel} download={download}>
       {content}
     </a>
   );
