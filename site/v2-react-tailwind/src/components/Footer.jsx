@@ -22,7 +22,7 @@ function Footer() {
                     px-4 text-sm text-neutral-400
                     transition-colors duration-300 ease-out
                     hover:text-red-500
-                    focus-visible:text-red-500"
+                    focus-visible:text-red-500 rounded-md"
                 />
               </li>
             ))}

@@ -47,7 +47,7 @@ function Contact() {
                     px-4 text-neutral-100
                     transition duration-300 ease-out
                     hover:-translate-y-0.5 hover:text-red-400
-                    focus-visible:-translate-y-0.5 focus-visible:text-red-400"
+                    focus-visible:-translate-y-0.5 focus-visible:text-red-400 rounded-md"
                 >
                   <ion-icon name={link.iconName} size={link.size}></ion-icon>
                 </AppLink>
