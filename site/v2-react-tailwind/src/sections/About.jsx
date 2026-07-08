@@ -8,7 +8,7 @@ function About() {
     <PageSection id="about" ariaLabelledBy="about-heading" variant="gray">
       <div className="flex flex-col gap-8">
         <div className="flex flex-col gap-4">
-          <h2 id="about-heading" className="text-4xl font-bold sm:text-5xl">
+          <h2 id="about-heading" className="text-4xl font-bold text-center sm:text-left sm:text-5xl">
             About Me
           </h2>
 
@@ -31,7 +31,7 @@ function About() {
         </div>
 
         <div className="flex flex-col gap-4">
-          <h3 className="text-4xl font-bold">Education</h3>
+          <h3 className="text-center text-3xl font-bold sm:text-left sm:text-4xl">Education</h3>
           <Divider />
           <ul className="flex flex-col gap-4">
             {educationItems.map((education) => (
@@ -44,7 +44,7 @@ function About() {
         </div>
 
         <div className="flex flex-col gap-4">
-          <h3 className="text-4xl font-bold">Certifications</h3>
+          <h3 className="text-center text-3xl font-bold sm:text-left sm:text-4xl">Certifications</h3>
           <Divider />
           <ul className="flex flex-col gap-0.5">
             {certificationItems.map((cert) => (

@@ -7,7 +7,7 @@ const sectionVariants = {
 
 function PageSection({ children, id, className = "", ariaLabelledBy, variant = "dark" }) {
   return (
-    <section id={id} className={`scroll-mt-19 py-20 ${sectionVariants[variant]} ${className}`} aria-labelledby={ariaLabelledBy}>
+    <section id={id} className={`scroll-mt-27 py-10 sm:scroll-mt-19 sm:py-20 ${sectionVariants[variant]} ${className}`} aria-labelledby={ariaLabelledBy}>
       <Container>{children}</Container>
     </section>
   );
