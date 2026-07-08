@@ -8,7 +8,7 @@ function About() {
     <PageSection id="about" ariaLabelledBy="about-heading" variant="gray">
       <div className="flex flex-col gap-8">
         <div className="flex flex-col gap-4">
-          <h2 id="about-heading" className="text-5xl  font-bold">
+          <h2 id="about-heading" className="text-4xl font-bold sm:text-5xl">
             About Me
           </h2>
 
