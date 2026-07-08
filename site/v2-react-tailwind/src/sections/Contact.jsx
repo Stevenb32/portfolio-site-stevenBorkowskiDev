@@ -29,7 +29,8 @@ function Contact() {
               link={primaryContactLink}
               className="
                 inline-flex items-center justify-center
-                rounded-full bg-red-700
+                rounded-full 
+                bg-red-700
                 px-8 py-3
                 font-medium text-neutral-100
                 transition duration-300 ease-out
@@ -43,11 +44,16 @@ function Contact() {
                   key={link.id}
                   link={link}
                   className="
-                    inline-flex min-h-11 items-center justify-center
-                    px-4 text-neutral-100
+                    inline-flex items-center justify-center
+                    min-h-11
+                    px-4 
+                    text-neutral-100
                     transition duration-300 ease-out
-                    hover:-translate-y-0.5 hover:text-red-400
-                    focus-visible:-translate-y-0.5 focus-visible:text-red-400 rounded-md"
+                    hover:-translate-y-0.5 
+                    hover:text-red-400
+                    focus-visible:-translate-y-0.5 
+                    focus-visible:text-red-400 
+                    rounded-md"
                 >
                   <ion-icon name={link.iconName} size={link.size}></ion-icon>
                 </AppLink>

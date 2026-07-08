@@ -32,6 +32,7 @@ function About() {
 
         <div className="flex flex-col gap-4">
           <h3 className="text-4xl font-bold">Education</h3>
+          <Divider />
           <ul className="flex flex-col gap-4">
             {educationItems.map((education) => (
               <li key={education.id} className="text-neutral-400">
@@ -44,6 +45,7 @@ function About() {
 
         <div className="flex flex-col gap-4">
           <h3 className="text-4xl font-bold">Certifications</h3>
+          <Divider />
           <ul className="flex flex-col gap-0.5">
             {certificationItems.map((cert) => (
               <li key={cert.id} className="text-sm text-neutral-400">
