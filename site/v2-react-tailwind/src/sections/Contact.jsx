@@ -27,15 +27,7 @@ function Contact() {
           <div className="flex flex-col items-center gap-6">
             <AppLink
               link={primaryContactLink}
-              className="
-                inline-flex items-center justify-center
-                rounded-full 
-                bg-red-700
-                px-8 py-3
-                font-medium text-neutral-100
-                transition duration-300 ease-out
-                hover:-translate-y-0.5 hover:bg-red-600
-                focus-visible:-translate-y-0.5 focus-visible:bg-red-600"
+              className="inline-flex items-center justify-center rounded-full bg-red-700 px-8 py-3 font-medium text-neutral-100 transition duration-300 ease-out hover:-translate-y-0.5 hover:bg-red-600 focus-visible:-translate-y-0.5 focus-visible:bg-red-600"
             />
 
             <div className="flex flex-wrap justify-center gap-4">
@@ -43,17 +35,7 @@ function Contact() {
                 <AppLink
                   key={link.id}
                   link={link}
-                  className="
-                    inline-flex items-center justify-center
-                    min-h-11
-                    px-4 
-                    text-neutral-100
-                    transition duration-300 ease-out
-                    hover:-translate-y-0.5 
-                    hover:text-red-400
-                    focus-visible:-translate-y-0.5 
-                    focus-visible:text-red-400 
-                    rounded-md"
+                  className="inline-flex items-center justify-center min-h-11 px-4 text-neutral-100 transition duration-300 ease-out hover:-translate-y-0.5 hover:text-red-400 focus-visible:-translate-y-0.5 focus-visible:text-red-400 rounded-md"
                 >
                   <ion-icon name={link.iconName} size={link.size}></ion-icon>
                 </AppLink>

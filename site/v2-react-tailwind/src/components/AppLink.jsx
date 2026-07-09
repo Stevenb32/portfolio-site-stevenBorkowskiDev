@@ -9,7 +9,7 @@ function AppLink({ link, className = "", children }) {
 
   const linkClassName = `${focusRing} ${className}`;
 
-  if (type === "route") {
+  if (type === "route" || type === "anchor") {
     return (
       <Link className={linkClassName} to={href} aria-label={ariaLabel}> 
         {content}
