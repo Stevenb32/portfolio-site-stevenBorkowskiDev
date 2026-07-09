@@ -24,7 +24,7 @@ function Experience() {
 
               <div className="flex flex-col gap-4">
                 <div className="flex flex-col gap-1">
-                  <h3 className="text-2xl font-bold text-neutral-100 text-center sm:text-left ">{experience.role}</h3>
+                  <h3 className="text-2xl font-bold text-neutral-100 text-center sm:text-left">{experience.role}</h3>
 
                   <p className="flex flex-wrap items-center justify-center gap-1 text-xs sm:justify-normal sm:text-sm">
                     <span className="text-red-400">{experience.industry}</span>
@@ -35,7 +35,7 @@ function Experience() {
 
                 <ul className="flex flex-wrap gap-2">
                   {experience.tech.map((tech) => (
-                    <Chip key={tech} as="li" variant="tech">
+                    <Chip key={tech} as="li" variant="tech" >
                       {tech}
                     </Chip>
                   ))}

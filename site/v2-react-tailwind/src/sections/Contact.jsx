@@ -10,7 +10,7 @@ function Contact() {
       <div className="flex justify-center">
         <Card as="div" className="flex w-full max-w-3xl flex-col gap-6 bg-neutral-900 text-center">
           <div className="flex flex-col gap-3">
-            <h2 id="contact-heading" className="text-center text-5xl font-bold">
+            <h2 id="contact-heading" className="text-4xl text-center font-bold sm:text-5xl">
               Let’s Connect
             </h2>
 

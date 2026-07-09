@@ -10,7 +10,7 @@ function Projects() {
     <PageSection id="projects" ariaLabelledBy="projects-heading" variant="gray">
       <div className="flex flex-col gap-8">
         <div>
-          <h2 id="projects-heading" className="text-center text-5xl font-bold">
+          <h2 id="projects-heading" className="text-4xl text-center font-bold sm:text-5xl">
             Projects
           </h2>
         </div>
@@ -18,11 +18,11 @@ function Projects() {
         <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
           {projectItems.map((project) => (
             <Card key={project.id} as="article" className="flex flex-col gap-3 bg-black">
-              <p className="text-xs uppercase tracking-widest text-red-400">{project.categories.join(" · ")}</p>
+              <p className="text-xs uppercase tracking-widest text-red-400 text-center sm:text-left">{project.categories.join(" · ")}</p>
 
               <Divider />
 
-              <h3 className="text-3xl font-bold text-neutral-100">{project.title}</h3>
+              <h3 className="text-3xl font-bold text-neutral-100 text-center sm:text-left">{project.title}</h3>
 
               <Divider />
 

@@ -12,14 +12,14 @@ function Footer() {
             <p className="text-sm text-neutral-400">QA Team Lead · Building Skills in Automation & CI/CD</p>
           </div>
 
-          <ul className="flex flex-wrap justify-center gap-4">
+          <ul className="flex flex-wrap justify-center gap-2">
             {footerLinks.map((link) => (
               <li key={link.id}>
                 <AppLink
                   link={link}
                   className="
                     inline-flex min-h-11 items-center justify-center
-                    px-4 text-sm text-neutral-400
+                    px-2 text-sm text-neutral-400
                     transition-colors duration-300 ease-out
                     hover:text-red-500
                     focus-visible:text-red-500 rounded-md"
