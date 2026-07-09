@@ -6,9 +6,9 @@ export const navLinks = [
     type: "anchor",
   },
   {
-    id: "about",
-    label: "About",
-    href: "/#about",
+    id: "projects",
+    label: "Projects",
+    href: "/#projects",
     type: "anchor",
   },
   {
@@ -18,9 +18,9 @@ export const navLinks = [
     type: "anchor",
   },
   {
-    id: "projects",
-    label: "Projects",
-    href: "/#projects",
+    id: "about",
+    label: "About",
+    href: "/#about",
     type: "anchor",
   },
   {
@@ -39,9 +39,9 @@ export const footerLinks = [
     type: "anchor",
   },
   {
-    id: "about",
-    label: "About",
-    href: "/#about",
+    id: "projects",
+    label: "Projects",
+    href: "/#projects",
     type: "anchor",
   },
   {
@@ -51,9 +51,9 @@ export const footerLinks = [
     type: "anchor",
   },
   {
-    id: "projects",
-    label: "Projects",
-    href: "/#projects",
+    id: "about",
+    label: "About",
+    href: "/#about",
     type: "anchor",
   },
   {
