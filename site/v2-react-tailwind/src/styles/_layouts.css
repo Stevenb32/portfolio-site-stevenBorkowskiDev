@@ -4,9 +4,9 @@
 /* Skeleton - where are things and how they are arranged */
 
 /* Page ---------------------------------------------------------------- */
-#home {
+/* #home {
   scroll-margin-top: 0;
-}
+} */
 
 /* .page {
   display: flex;
@@ -104,7 +104,7 @@
 /* Layout Media Queries ------------------------------------------------ */
 
 /* tablet + down (768px) */
-@media (max-width: 48em) {
+/* @media (max-width: 48em) {
   html {
     scroll-padding-top: var(--scroll-offset-tablet);
   }
@@ -120,10 +120,10 @@
   .container {
     padding-inline: var(--space-12);
   }
-}
+} */
 
 /* phone + down (480px) */
-@media (max-width: 30em) {
+/* @media (max-width: 30em) {
   html {
     scroll-padding-top: var(--scroll-offset-phone);
   }
@@ -135,14 +135,14 @@
   .container {
     padding-inline: var(--space-8);
   }
-}
+} */
 
 /* small phone + down (424px) */
-@media (max-width: 26.5em) {
+/* @media (max-width: 26.5em) {
   html {
     scroll-padding-top: var(--scroll-offset-phone-s);
   }
-}
+} */
 
 /* ultra-small phones (320px) */
 /* @media (max-width: 20em) {

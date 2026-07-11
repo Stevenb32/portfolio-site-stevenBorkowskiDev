@@ -13,10 +13,10 @@ function Experience() {
           </h2>
         </div>
 
-        <div className="flex flex-col gap-4 sm:gap-6">
+        <div className="flex flex-col gap-4 items-center sm:gap-6">
           {experienceItems.map((experience) => (
-            <Card key={experience.id} as="article" className="grid gap-4 md:grid-cols-[12rem_1fr] md:gap-8 bg-neutral-900">
-              <div className="whitespace-nowrap text-center sm:text-left">
+            <Card key={experience.id} as="article" className="grid gap-4 md:grid-cols-[12rem_1fr] md:gap-8 bg-neutral-900 max-w-md md:max-w-none">
+              <div className="whitespace-nowrap text-center md:text-left">
                 <Chip as="p" variant="date">
                   {experience.date}
                 </Chip>
@@ -24,16 +24,16 @@ function Experience() {
 
               <div className="flex flex-col gap-4">
                 <div className="flex flex-col gap-1">
-                  <h3 className="text-2xl font-bold text-neutral-100 text-center sm:text-left">{experience.role}</h3>
+                  <h3 className="text-2xl font-bold text-neutral-100 text-center md:text-left">{experience.role}</h3>
 
-                  <p className="flex flex-wrap items-center justify-center gap-1 text-xs sm:justify-normal sm:text-sm">
+                  <p className="flex flex-wrap justify-center gap-1 text-xs md:justify-normal sm:text-sm">
                     <span className="text-red-400">{experience.industry}</span>
                     <span className="text-neutral-500">•</span>
                     <span className="text-neutral-400">{experience.company}</span>
                   </p>
                 </div>
 
-                <ul className="flex flex-wrap gap-2">
+                <ul className="flex flex-wrap gap-2 justify-center md:justify-start">
                   {experience.tech.map((tech) => (
                     <Chip key={tech} as="li" variant="tech" >
                       {tech}

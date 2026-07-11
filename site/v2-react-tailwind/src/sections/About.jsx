@@ -5,14 +5,14 @@ import { certificationItems } from "../data/certifications";
 
 function About() {
   return (
-    <PageSection id="about" ariaLabelledBy="about-heading" variant="gray">
+    <PageSection id="about" ariaLabelledBy="about-heading" variant="gray" className="px-6 md:px-10">
       <div className="flex flex-col gap-8">
-        <div className="flex flex-col gap-4">
-          <h2 id="about-heading" className="text-4xl font-bold text-center sm:text-left sm:text-5xl">
+        <div className="flex flex-col gap-4 items-center">
+          <h2 id="about-heading" className="text-4xl font-bold text-center sm:text-5xl">
             About Me
           </h2>
 
-          <Divider />
+          <Divider className="w-full" />
 
           <p className="max-w-[70ch] text-neutral-400">
             I’ve always been curious about the systems people build and rely on every day — software, hardware, networks, infrastructure,
@@ -31,12 +31,14 @@ function About() {
         </div>
 
         <div className="flex flex-col gap-4">
-          <h3 className="text-center text-3xl font-bold sm:text-left sm:text-4xl">Education</h3>
+          <h3 className="text-center text-3xl font-bold sm:text-4xl">Education</h3>
+
           <Divider />
-          <ul className="flex flex-col gap-4">
+
+          <ul className="mx-auto flex w-full max-w-[70ch] flex-col gap-4">
             {educationItems.map((education) => (
               <li key={education.id} className="text-neutral-400">
-                <h4 className="text-xl font-bold text-neutral-400">{education.college}</h4>
+                <h4 className="text-xl font-bold text-neutral-300">{education.college}</h4>
                 <p className="text-sm">{education.degree}</p>
               </li>
             ))}
@@ -44,9 +46,9 @@ function About() {
         </div>
 
         <div className="flex flex-col gap-4">
-          <h3 className="text-center text-3xl font-bold sm:text-left sm:text-4xl">Certifications</h3>
+          <h3 className="text-center text-3xl font-bold sm:text-4xl">Certifications</h3>
           <Divider />
-          <ul className="flex flex-col gap-0.5">
+          <ul className="mx-auto flex w-full max-w-[70ch] flex-col gap-0.5">
             {certificationItems.map((cert) => (
               <li key={cert.id} className="text-sm text-neutral-400">
                 {cert.name}

@@ -8,21 +8,21 @@ import { projectItems } from "../data/projects";
 function Projects() {
   return (
     <PageSection id="projects" ariaLabelledBy="projects-heading" variant="gray">
-      <div className="flex flex-col gap-8">
+      <div className="flex flex-col gap-6 sm:gap-8">
         <div>
           <h2 id="projects-heading" className="text-4xl text-center font-bold sm:text-5xl">
             Projects
           </h2>
         </div>
 
-        <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
+        <div className="grid justify-items-center gap-3 sm:gap-6 md:grid-cols-2 md:justify-items-stretch xl:grid-cols-3">
           {projectItems.map((project) => (
-            <Card key={project.id} as="article" className="flex flex-col gap-3 bg-black">
-              <p className="text-xs uppercase tracking-widest text-red-400 text-center sm:text-left">{project.categories.join(" · ")}</p>
+            <Card key={project.id} as="article" className="flex w-full max-w-md flex-col gap-3 bg-black md:max-w-none">
+              <p className="text-xs uppercase tracking-widest text-red-400 text-center md:text-left">{project.categories.join(" · ")}</p>
 
               <Divider />
 
-              <h3 className="text-3xl font-bold text-neutral-100 text-center sm:text-left">{project.title}</h3>
+              <h3 className="text-3xl font-bold text-neutral-100 text-center md:text-left">{project.title}</h3>
 
               <Divider />
 
@@ -30,7 +30,7 @@ function Projects() {
 
               <Divider />
 
-              <ul className="flex flex-wrap gap-2">
+              <ul className="flex flex-wrap gap-2 justify-center md:justify-start">
                 {project.tech.map((item) => (
                   <Chip key={item} as="li" variant="tech">
                     {item}
@@ -40,7 +40,7 @@ function Projects() {
 
               <Divider />
 
-              <div className="flex flex-col gap-4">
+              <div className="flex flex-col gap-4 items-center md:items-start">
                 {project.links.map((link) => (
                   <AppLink key={link.id} link={link} className="font-medium text-red-400 hover:text-red-500 focus-visible:text-red-500 rounded-md"/>
                 ))}

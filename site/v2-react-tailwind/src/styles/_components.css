@@ -555,7 +555,7 @@
 /* Media Queries  ----------------------------------------------------------- */
 
 /* tablet + down (768px) */
-@media (max-width: 48em) {
+/* @media (max-width: 48em) {
   .nav__link,
   .footer__link {
     min-height: 4.4rem;
@@ -584,10 +584,10 @@
   .contact__panel {
     max-width: none;
   }
-}
+} */
 
 /* phone + down (480px) */
-@media (max-width: 30em) {
+/* @media (max-width: 30em) {
   .nav__link,
   .footer__link {
     min-height: 3.2rem;
@@ -618,7 +618,7 @@
   .project__tech {
     justify-content: center;
   }
-}
+} */
 
 /* ultra-small phones (320px) */
 /* @media (max-width: 20em) {

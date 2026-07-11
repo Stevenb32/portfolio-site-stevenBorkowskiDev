@@ -2,7 +2,7 @@ import PageSection from "../components/PageSection";
 
 function Hero() {
   return (
-    <PageSection id="home" className="flex items-center min-h-[60vh]">
+    <PageSection id="home" className="flex items-center min-h-[60vh] px-6 md:px-10">
       <div className="mx-auto max-w-[70ch]">
         <p className="mb-4 text-xl text-neutral-400">Hi I'm</p>
         <h1 className="mb-6 text-5xl font-bold tracking-normal text-neutral-100 sm:text-6xl">Steven Borkowski</h1>
