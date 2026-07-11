@@ -1,9 +1,0 @@
-/* CSS Partials */
-@import url("./_tokens.css");
-@import url("./_reset.css");
-@import url("./_base.css");
-@import url("./_layouts.css");
-@import url("./_utilities.css");
-@import url("./_components.css");
-
-/* Optional Global Overrides */

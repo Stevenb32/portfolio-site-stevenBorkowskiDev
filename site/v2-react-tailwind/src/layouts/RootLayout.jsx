@@ -5,7 +5,7 @@ import Footer from "../components/Footer";
 
 function RootLayout() {
   return (
-    <div className="debug-outline flex min-h-screen flex-col">
+    <div className="debug-outline flex flex-col min-h-screen">
       <SkipLink />
       <Header />
 

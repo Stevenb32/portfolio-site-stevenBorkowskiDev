@@ -4,7 +4,7 @@ import { footerLinks } from "../data/navigation";
 
 function Footer() {
   return (
-    <footer className="shrink-0 border-t border-neutral-800 bg-neutral-900 py-4">
+    <footer className="shrink-0 py-4 bg-neutral-900 border-t border-neutral-800">
       <Container>
         <div className="flex flex-col items-center gap-4 text-center">
           <div className="flex flex-col gap-1">
@@ -17,12 +17,7 @@ function Footer() {
               <li key={link.id}>
                 <AppLink
                   link={link}
-                  className="
-                    inline-flex min-h-11 items-center justify-center
-                    px-2 text-sm text-neutral-400
-                    transition-colors duration-300 ease-out
-                    hover:text-red-500
-                    focus-visible:text-red-500 rounded-md"
+                  className="inline-flex items-center justify-center min-h-11 px-2 text-sm text-neutral-400 hover:text-red-500 focus-visible:text-red-500 rounded-md transition-colors duration-300 ease-out"
                 />
               </li>
             ))}
