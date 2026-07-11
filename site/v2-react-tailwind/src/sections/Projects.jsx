@@ -42,7 +42,11 @@ function Projects() {
 
               <div className="flex flex-col gap-4 items-center md:items-start">
                 {project.links.map((link) => (
-                  <AppLink key={link.id} link={link} className="font-medium text-red-400 hover:text-red-500 focus-visible:text-red-500 rounded-md"/>
+                  <AppLink
+                    key={link.id}
+                    link={link}
+                    className="font-medium text-red-400 hover:text-red-500 focus-visible:text-red-500 rounded-md"
+                  />
                 ))}
               </div>
 

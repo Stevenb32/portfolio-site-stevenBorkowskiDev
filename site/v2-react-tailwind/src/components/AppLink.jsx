@@ -14,9 +14,7 @@ function AppLink({ link, className = "", children }) {
   function handleInternalLinkClick(event) {
     const destination = new URL(href, window.location.origin);
 
-    const isCurrentDestination =
-      destination.pathname === location.pathname &&
-      destination.hash === location.hash;
+    const isCurrentDestination = destination.pathname === location.pathname && destination.hash === location.hash;
 
     if (isCurrentDestination && destination.hash) {
       event.preventDefault();
@@ -32,26 +30,14 @@ function AppLink({ link, className = "", children }) {
 
   if (type === "route" || type === "anchor") {
     return (
-      <Link
-        className={linkClassName}
-        to={href}
-        aria-label={ariaLabel}
-        onClick={handleInternalLinkClick}
-      >
+      <Link className={linkClassName} to={href} aria-label={ariaLabel} onClick={handleInternalLinkClick}>
         {content}
       </Link>
     );
   }
 
   return (
-    <a
-      className={linkClassName}
-      href={href}
-      aria-label={ariaLabel}
-      target={target}
-      rel={rel}
-      download={download}
-    >
+    <a className={linkClassName} href={href} aria-label={ariaLabel} target={target} rel={rel} download={download}>
       {content}
     </a>
   );

@@ -1,10 +1,6 @@
 @import "tailwindcss";
 
 @layer utilities {
-  .debug-outline,
-  .debug-outline * {
-    /* outline: 1px solid red; */
-  }
 }
 
 @theme {
@@ -20,7 +16,7 @@
     @apply bg-black text-neutral-100 antialiased;
   }
 
-   #home {
+  #home {
     scroll-margin-top: 0;
   }
 }

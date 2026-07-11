@@ -41,7 +41,12 @@ function ProjectPage() {
 
         <div className="grid gap-6">
           {project.cards.map((card) => (
-            <Card key={card.id} as="section" className="flex flex-col gap-3 bg-neutral-900 mx-auto w-full max-w-[70ch]" aria-labelledby={`project-${card.id}`}>
+            <Card
+              key={card.id}
+              as="section"
+              className="flex flex-col gap-3 bg-neutral-900 mx-auto w-full max-w-[70ch]"
+              aria-labelledby={`project-${card.id}`}
+            >
               <h2 id={`project-${card.id}`} className="text-3xl text-center font-bold text-neutral-100 sm:text-5xl ">
                 {card.title}
               </h2>
@@ -79,7 +84,11 @@ function ProjectPage() {
 
           <div className="flex flex-col gap-4 items-center">
             {project.links.map((link) => (
-              <AppLink key={link.id} link={link} className="font-medium text-red-400 hover:text-red-500 focus-visible:text-red-500 rounded-md"/>
+              <AppLink
+                key={link.id}
+                link={link}
+                className="font-medium text-red-400 hover:text-red-500 focus-visible:text-red-500 rounded-md"
+              />
             ))}
           </div>
         </div>

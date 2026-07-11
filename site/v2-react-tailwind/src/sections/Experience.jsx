@@ -15,7 +15,11 @@ function Experience() {
 
         <div className="flex flex-col gap-4 items-center sm:gap-6">
           {experienceItems.map((experience) => (
-            <Card key={experience.id} as="article" className="grid gap-4 md:grid-cols-[12rem_1fr] md:gap-8 bg-neutral-900 max-w-md md:max-w-none">
+            <Card
+              key={experience.id}
+              as="article"
+              className="grid gap-4 md:grid-cols-[12rem_1fr] md:gap-8 bg-neutral-900 max-w-md md:max-w-none"
+            >
               <div className="whitespace-nowrap text-center md:text-left">
                 <Chip as="p" variant="date">
                   {experience.date}
@@ -35,7 +39,7 @@ function Experience() {
 
                 <ul className="flex flex-wrap gap-2 justify-center md:justify-start">
                   {experience.tech.map((tech) => (
-                    <Chip key={tech} as="li" variant="tech" >
+                    <Chip key={tech} as="li" variant="tech">
                       {tech}
                     </Chip>
                   ))}
