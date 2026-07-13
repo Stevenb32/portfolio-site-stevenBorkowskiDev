@@ -1,5 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /templates/
+Disallow:
 
 Sitemap: https://stevenborkowski.dev/sitemap.xml
