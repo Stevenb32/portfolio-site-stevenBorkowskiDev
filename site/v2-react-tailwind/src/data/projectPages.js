@@ -2,8 +2,9 @@ export const projectPages = [
   {
     id: "tasktracker",
     categories: ["QA Automation", "SDET Portfolio"],
-    technologies: ["C#", ".NET", "EF Core", "PostgreSQL", "React", "Playwright", "xUnit", "Docker", "GitHub Actions"],
     title: "TaskTracker",
+    technologies: ["C#", ".NET", "EF Core", "PostgreSQL", "React", "Playwright", "xUnit", "Docker", "GitHub Actions"],
+    description: "A full-stack task management application built with React, .NET, PostgreSQL, Playwright, Docker, and layered automated testing.",
 
     cards: [
       {
@@ -58,11 +59,13 @@ export const projectPages = [
       },
     ],
   },
-{
+
+  {
     id: "containerized-web-infrastructure",
     categories: ["DevOps", "Infrastructure"],
     title: "Containerized Web Infrastructure",
     technologies: ["Cloudflare", "DNS", "SSL/TLS", "Docker", "Docker Compose", "Nginx", "Linux", "Self-Hosting"],
+    description: "A self-hosted web infrastructure project using Cloudflare, Docker Compose, Nginx, DNS, and HTTPS to securely serve public applications.",
 
     cards: [
       {
@@ -85,11 +88,13 @@ export const projectPages = [
     ],
     links: [{ id: "home", label: "← Back to projects", href: "/#projects", type: "anchor" }],
   },
+
   {
     id: "raspberry-pi-home-server",
     categories: ["Infrastructure", "Home Lab"],
     title: "Self-Hosted Linux Server",
     technologies: ["Linux", "Docker", "SSH", "Tailscale", "Networking", "Home Lab"],
+    description: "A Raspberry Pi home server built to practice Linux administration, Docker, networking, secure remote access, backups, and service reliability.",
 
     cards: [
       {
@@ -118,12 +123,14 @@ export const projectPages = [
         type: "anchor",
       },
     ],
-  }, 
+  },
+
   {
     id: "portfolio-v2",
     categories: ["React", "Frontend"],
     title: "Portfolio Website (v2)",
     technologies: ["React", "Tailwind CSS", "React Router", "Vite", "JavaScript", "Responsive Design"],
+    description: "A React and Tailwind CSS portfolio rebuild using reusable components, shared project data, client-side routing, and responsive design.",
 
     cards: [
       {
@@ -162,11 +169,13 @@ export const projectPages = [
       },
     ],
   },
+
   {
     id: "portfolio-v1",
     categories: ["Frontend", "Accessibility"],
     title: "Portfolio Website (v1)",
     technologies: ["HTML", "CSS", "Accessibility", "Responsive Design", "BEM", "Design Tokens"],
+    description: "A hand-built HTML and CSS portfolio focused on frontend fundamentals, semantic structure, accessibility, responsive design, and maintainable CSS.",
 
     cards: [
       {
@@ -198,5 +207,4 @@ export const projectPages = [
       },
     ],
   },
-  
 ];
