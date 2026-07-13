@@ -2,6 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://stevenborkowski.dev/</loc>
-    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://stevenborkowski.dev/projects/tasktracker</loc>
+  </url>
+  <url>
+    <loc>https://stevenborkowski.dev/projects/containerized-web-infrastructure</loc>
+  </url>
+  <url>
+    <loc>https://stevenborkowski.dev/projects/raspberry-pi-home-server</loc>
+  </url>
+  <url>
+    <loc>https://stevenborkowski.dev/projects/portfolio-v2</loc>
+  </url>
+  <url>
+    <loc>https://stevenborkowski.dev/projects/portfolio-v1</loc>
   </url>
 </urlset>
