@@ -53,7 +53,7 @@ export const projectItems = [
     categories: ["React", "Frontend"],
     title: "Portfolio Website (v2)",
     description:
-      "React and Tailwind CSS portfolio rebuild structured around reusable components, shared project data, client-side routing, responsive layouts, and maintainable content patterns for presenting QA leadership, automation, and infrastructure work",
+      "React and Tailwind CSS portfolio rebuild structured around reusable components, shared project data, client-side routing, responsive layouts, and maintainable content patterns for showcasing my experience, technical skills, and projects",
     tech: ["React", "Tailwind CSS", "React Router", "Vite", "JavaScript", "Responsive Design"],
     links: [
       {

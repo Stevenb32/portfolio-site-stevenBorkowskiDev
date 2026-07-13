@@ -40,12 +40,15 @@ function Projects() {
 
               <Divider />
 
-              <div className="flex flex-col gap-4 items-center md:items-start">
+              <div className="flex flex-col items-center gap-4 md:items-start">
                 {project.links.map((link) => (
                   <AppLink
                     key={link.id}
-                    link={link}
-                    className="font-medium text-red-400 hover:text-red-500 focus-visible:text-red-500 rounded-md"
+                    link={{
+                      ...link,
+                      ariaLabel: link.label === "Project Details →" ? `Project Details for ${project.title}` : link.ariaLabel,
+                    }}
+                    className="rounded-md font-medium text-red-400 hover:text-red-500 focus-visible:text-red-500"
                   />
                 ))}
               </div>

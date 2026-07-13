@@ -1,85 +1,34 @@
-# StevenBorkowski.dev – Portfolio & Resume Site
+# StevenBorkowski.dev
 
-- Personal portfolio and resume website built to showcase frontend fundamentals, environment separation, and real-world deployment workflows.
-
----
+Personal portfolio and resume website built with React and Tailwind CSS.
 
 ## Live Site
 
-- **Production:** https://stevenborkowski.dev  
+**Production:** https://stevenborkowski.dev
 
----
+## About the Project
 
-## Project Purpose
-- This project serves as both a public portfolio/resume and a hands-on learning platform.
-- Rather than focusing solely on visual presentation, the site is intentionally designed to reflect real engineering workflows—from local development to staged and production deployments—while remaining simple, maintainable, and easy to iterate on over time.
+This site showcases my QA experience, technical projects, education, and certifications.
 
----
+Version 2 rebuilds the original HTML and CSS site as a React application with reusable components, responsive layouts, and client-side routing.
 
-## What This Project Emphasizes
-
-- Clear project structure and readability
-- Maintainability over cleverness
-- Environment separation (staging vs production)
-- Realistic deployment patterns
-- Incremental improvement instead of one-off builds
-
----
-
-## Learning Context
-
-- This project was developed as part of an ongoing effort to strengthen practical understanding of frontend development and deployment fundamentals.
-- Learning was driven by a mix of structured coursework, hands-on experimentation, and AI-assisted guidance used to explore tradeoffs, validate understanding, and ask deeper “why” questions.
-- All architectural and implementation decisions were made deliberately, with an emphasis on comprehension and long-term skill growth.
-
----
-
-## Architecture Overview
-
-The project is structured to separate application content from infrastructure concerns, allowing each to evolve independently.
-
-At a high level:
-- The site itself is a static frontend application
-- Infrastructure concerns (web server, environment configuration, deployment) are handled separately
-- Staging and production environments are treated as distinct deployments
-
-
----
-
-## Deployment & Environments
-
-The site is deployed using containerized infrastructure to mirror real-world environment separation.
-
-- **Staging** is used to validate changes before release
-- **Production** serves the live public site
-- Both environments are hosted behind an Nginx web server
-
-This setup allows safe iteration, experimentation, and future automation without impacting the live site.
-
----
-
-## Roadmap
-
-Planned and potential improvements include:
-
-- Additional visual and layout iterations
-- Progressive enhancement of frontend architecture
-- CI/CD pipeline automation
-- Expansion beyond a static site into a full application
-- Continued refinement of infrastructure and deployment workflows
-
----
+The project also gives me a place to practice frontend development, accessibility, testing, and deployment workflows.
 
 ## Tech Stack
 
-- HTML, CSS, JavaScript
-- Nginx
-- Docker
-- Git & GitHub
-- GitHub Actions
+* React
+* React Router
+* Tailwind CSS
+* Vite
+* JavaScript
+* Nginx
+* Docker
+* GitHub Actions
 
----
+## Deployment
+
+The production build is served with Nginx in Docker and routed through Cloudflare.
 
 ## License
 
-- This project is intended for personal use and professional demonstration.
+This project is intended for personal use and professional demonstration.

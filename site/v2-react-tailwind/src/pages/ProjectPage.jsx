@@ -44,10 +44,10 @@ function ProjectPage() {
             <Card
               key={card.id}
               as="section"
-              className="flex flex-col gap-3 bg-neutral-900 mx-auto w-full max-w-[70ch]"
+              className="flex flex-col gap-3 bg-neutral-900 mx-auto w-full "
               aria-labelledby={`project-${card.id}`}
             >
-              <h2 id={`project-${card.id}`} className="text-3xl text-center font-bold text-neutral-100 sm:text-5xl ">
+              <h2 id={`project-${card.id}`} className="text-3xl text-center font-bold text-neutral-100 sm:text-5xl">
                 {card.title}
               </h2>
 
@@ -55,7 +55,7 @@ function ProjectPage() {
 
               {card.paragraphs &&
                 card.paragraphs.map((paragraph) => (
-                  <p key={paragraph} className="leading-6 text-neutral-400">
+                  <p key={paragraph} className="mx-auto w-full max-w-[70ch] leading-6 text-neutral-400">
                     {paragraph}
                   </p>
                 ))}

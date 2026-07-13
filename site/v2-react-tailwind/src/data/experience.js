@@ -11,7 +11,7 @@ export const experienceItems = [
       "Designed and scaled a modular QA framework, initially supporting a 50k+ user mobile application and later adopted as an organizational standard.",
       "Developed EMEU automation scripts to register test patients and create patient data in PowerChart and Revenue Cycle, reducing repetitive manual setup for healthcare testing workflows.",
       "Established structured regression and release validation processes, including BrowserStack-based mobile device testing, improving coverage and reducing late-stage risk.",
-      "Partnered with product and engineering teams to shift QA earlier in the SDLC by refining acceptance criteria, clarifying risk, and reducing rework.",
+      "Collaborated with product and engineering teams to shift QA earlier in the SDLC, refining acceptance criteria, clarifying risk, and reducing rework.",
     ],
   },
   {
