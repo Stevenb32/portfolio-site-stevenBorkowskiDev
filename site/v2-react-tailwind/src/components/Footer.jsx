@@ -25,7 +25,7 @@ function Footer() {
 
           <div className="flex flex-col gap-1">
             <p className="text-sm text-neutral-400">© {new Date().getFullYear()} Steven Borkowski</p>
-            <p className="text-xs text-neutral-400">v2.0.0 · Built by hand · Self-hosted</p>
+            <p className="text-xs text-neutral-400">v2.0.1 · Built by hand · Self-hosted</p>
           </div>
         </div>
       </Container>
