@@ -1,4 +1,5 @@
 # StevenBorkowski.dev
+[![Deploy Site](https://github.com/Stevenb32/portfolio-site-stevenBorkowskiDev/actions/workflows/deploy-site.yml/badge.svg?branch=main)](https://github.com/Stevenb32/portfolio-site-stevenBorkowskiDev/actions/workflows/deploy-site.yml?query=branch%3Amain)
 
 Personal portfolio and resume website built with React and Tailwind CSS.
 
